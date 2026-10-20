@@ -1,0 +1,56 @@
+[
+  {
+    "name": "lobby",
+    "file": "public/images/lobby.webp",
+    "prompt": "Use case: photorealistic-natural. Asset type: wide hospital website hero photograph, landscape 16:9. Create an elegant contemporary Korean internal medicine clinic reception and waiting lounge. Pale warm limestone reception counter on right, subtle desaturated blue accent panel, oak details, comfortable cream fabric waiting chairs, large windows, delicate indoor tree, pristine premium yet approachable clinic architecture, daylight architectural editorial photography, realistic fine material textures. Composition: expansive uncluttered softly lit wall and open space in left third for website headline; strongest architecture and furnishings on right. Eye-level wide-angle, no exaggerated distortion. No people, no signage, no words, no logos, no watermarks. Cohesive palette warm whites, muted light blue, oak and navy accents. This is fictional demo facility, not an existing hospital.",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "consultation",
+    "file": "public/images/consultation.webp",
+    "prompt": "Use case: photorealistic-natural. Asset type: hospital website editorial photograph landscape 3:2. A fictional Korean male internal medicine doctor about 40 in clean white coat listening warmly to a Korean woman patient about 50 in a private modern clinic consultation room. Doctor on right, patient on left viewed in gentle side profile, desk between them, hands anatomically correct, natural understated candid expressions. Warm white walls, subtle desaturated blue details, light oak desk, soft daylight, refined realistic medical editorial photography. No readable text on coat, documents or screens. No logos, no watermarks, no dramatic treatment. Scene conveys attentive communication, fictional models only.",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "endoscopy",
+    "file": "public/images/endoscopy.webp",
+    "prompt": "Use case: photorealistic-natural. Asset type: hospital website medical equipment photograph landscape 3:2. A contemporary endoscopy examination room in a fictional premium Korean internal medicine clinic. Accurate generic unbranded medical endoscopy tower with dark inactive monitor on right, neatly placed flexible endoscope and control handle, cream examination bed to left, discreet blue storage cabinetry, white and pale warm grey surfaces, bright natural professional lighting, pristine restrained hospital editorial architecture photography. No patient, no invasive procedure, no blood, no text, no brand labels, no logos, no watermarks. Realistic functional equipment proportions, meticulous hygiene, subtle blue and oak details.",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "ultrasound",
+    "file": "public/images/ultrasound.webp",
+    "prompt": "Use case: photorealistic-natural. Asset type: hospital website equipment photograph landscape 3:2. Close medium composition of a modern generic unbranded diagnostic ultrasound machine with a keyboard control console, several neatly holstered probes, a large dark inactive monitor angled to camera, positioned next to a cream examination bed in a bright contemporary fictional Korean clinic. Pale warm grey walls, very subtle light blue cabinetry, soft window daylight. Premium medical editorial photography, realistic technical details without exaggerated futuristic features. No people, no readable screen graphics, no text, no logos, no watermarks.",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "infusion",
+    "file": "public/images/infusion.webp",
+    "prompt": "Use case: photorealistic-natural. Asset type: hospital facility website photograph landscape 3:2. A cozy private recovery and infusion room at a fictional contemporary Korean internal medicine clinic. One comfortable cream medical recliner by a softly sunlit tall window with sheer curtain, simple unoccupied IV stand beside chair, small oak side table, gentle blue upholstered accent, warm white walls, pale oak floor, quiet greenery outside. Architectural editorial photograph, physically realistic daylight and textures, calm intimate premium atmosphere. No people, no text, no hospital logos, no brands, no watermarks.",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "vaccination",
+    "file": "public/images/vaccination.webp",
+    "prompt": "Use case: photorealistic-natural. Asset type: hospital website photograph landscape 3:2. A fictional Korean female nurse in muted light blue clinical scrubs carefully preparing a small sterile vaccine syringe above an organized clean tray in a bright private vaccination room; focus on gloved hands, syringe and vaccine vial without any writing, nurse upper face softly outside frame, no patient. Professional restrained editorial healthcare photography, pale warm white walls, oak details, daylight from left, anatomically correct hands, medically plausible syringe scale. No needle entering skin, no blood, no readable text, no logos, no watermark.",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "physician",
+    "file": "public/images/physician.webp",
+    "prompt": "Use case: photorealistic-natural. Asset type: fictional physician portrait for hospital demo website, vertical 4:5. A fictional Korean male physician approximately 42 years old, friendly thoughtful composed expression with slight natural smile, neatly styled short black hair, white coat over pale blue shirt, navy trousers, seated at an oak consultation desk, three-quarter portrait from waist up. Bright soft white clinic background with subtle muted blue and beige details. Professional natural healthcare portrait photography, understated authentic skin texture, no glamour retouching. Empty coat without text or embroidery; no university badges, no credentials, no readable documents, no logos, no watermark. Clearly a fictional model, not a specific real person.",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "physician-02",
+    "file": "public/images/physician-02.webp",
+    "prompt": "Photorealistic professional healthcare portrait for a fictional Korean internal medicine clinic demo website. Fictional Korean male physician aged around 50, short neatly parted dark hair, thin black framed glasses, gentle natural smile, white coat over light blue shirt and dark navy tie, standing upright, three-quarter body down to mid-thigh, arms relaxed naturally in front, centered on a plain seamless very light grey background. Soft diffused studio light, realistic texture, no logo, no badges, no writing, no resemblance to a specific real person. Vertical portrait 4:5. Match calm trustworthy Korean clinic editorial photography.",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "physician-03",
+    "file": "public/images/physician-03.webp",
+    "prompt": "Photorealistic professional healthcare portrait for a fictional Korean internal medicine clinic demo website. Fictional Korean male physician around age 35, neat short dark hair, friendly composed expression, white medical coat over pale blue shirt, standing upright centered three-quarter body down to mid-thigh with hands relaxed naturally in front. Plain seamless very light grey background, soft diffused studio light, realistic natural skin texture. No logos, no badges, no text, no watermark, no resemblance to a specific real person. Vertical portrait 4:5. Calm trustworthy Korean clinic editorial photography.",
+    "generator": "built-in image_gen"
+  }
+]

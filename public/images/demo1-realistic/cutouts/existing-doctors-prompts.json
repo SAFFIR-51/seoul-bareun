@@ -1,0 +1,25 @@
+{
+  "generator": "Built-in image_gen",
+  "intent": "Background extraction from the three existing public/images doctor portraits",
+  "assets": [
+    {
+      "name": "physician",
+      "source": "C:\\Users\\MinSeo\\.codex\\generated_images\\01a156b9-020a-7da3-a93a-f7037aa7d8f7\\exec-40bcebc8-4ce7-4cc8-9c6a-2682a1a5b9bf.png",
+      "prompt": "Use case: identity-preserve, precise pose edit. Image 1 is the exact selected doctor's identity reference. Image 2 is a POSE AND FRAMING reference only; do NOT use image 2's face or glasses. Create an updated medical-team portrait of the same Korean male doctor from image 1, keeping his recognizable exact face, apparent age, hairstyle, facial expression, natural skin detail, white coat and open-collar light-blue shirt. Change only his seated pose to standing upright, shoulders relaxed, elbows at his sides, with both hands naturally clasped together in front of his lower abdomen, like the standing doctor in image 2. His head should be upright and facing the camera with a gentle reserved smile. Vertical portrait from full head to upper thighs with some margin around shoulders and above hair. Natural realistic anatomy and hands. No sitting, chair, desk, bent seated knees, furniture, objects or additional people. Keep a genuinely transparent alpha background and no cast shadow, halo, label, logo or watermark. Do not make him look like the pose-reference man.",
+      "input": "C:/Users/MinSeo/OneDrive - 한성대학교/문서/ChatGPT/서울 바른 병원/public/images/physician.png",
+      "poseReference": "/images/physician-02.png"
+    },
+    {
+      "name": "physician-02",
+      "source": "C:\\Users\\MinSeo\\.codex\\generated_images\\01a156b9-020a-7da3-a93a-f7037aa7d8f7\\exec-69aa3725-ec3c-4c38-9eab-66cc1b2f2291.png",
+      "prompt": "Use case: background-extraction, identity-preserve. This source photograph is the selected existing doctor image for the website. Perform only precise background removal. Do not generate a different doctor and do not repaint, retouch, reshape or beautify the existing person. Keep the original person's exact face, age, hairstyle, glasses if present, expression, head angle, body pose, hands, white coat, blue shirt and tie if present, folds and natural lighting. Preserve the original photographic foreground, framing and dimensions as closely as possible. Remove the grey or clinic background fully to transparent alpha, including furniture, table and chair if visible. Keep the doctor's actual clothing, body and hands. Preserve fine hair and eyewear edges without a halo; white coat remains opaque. Do not extend the body or change the seated or standing pose. No shadow, colored backdrop, outlines, text or new elements. One isolated original doctor on genuinely transparent background.",
+      "input": "C:/Users/MinSeo/OneDrive - 한성대학교/문서/ChatGPT/서울 바른 병원/public/images/physician-02.png"
+    },
+    {
+      "name": "physician-03",
+      "source": "C:\\Users\\MinSeo\\.codex\\generated_images\\01a156b9-020a-7da3-a93a-f7037aa7d8f7\\exec-0a0b7c87-6c1b-41ce-a0a7-d6000c59e750.png",
+      "prompt": "Use case: background-extraction, identity-preserve. This source photograph is the selected existing doctor image for the website. Perform only precise background removal. Do not generate a different doctor and do not repaint, retouch, reshape or beautify the existing person. Keep the original person's exact face, age, hairstyle, glasses if present, expression, head angle, body pose, hands, white coat, blue shirt and tie if present, folds and natural lighting. Preserve the original photographic foreground, framing and dimensions as closely as possible. Remove the grey or clinic background fully to transparent alpha, including furniture, table and chair if visible. Keep the doctor's actual clothing, body and hands. Preserve fine hair and eyewear edges without a halo; white coat remains opaque. Do not extend the body or change the seated or standing pose. No shadow, colored backdrop, outlines, text or new elements. One isolated original doctor on genuinely transparent background.",
+      "input": "C:/Users/MinSeo/OneDrive - 한성대학교/문서/ChatGPT/서울 바른 병원/public/images/physician-03.png"
+    }
+  ]
+}

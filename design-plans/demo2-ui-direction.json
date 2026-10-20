@@ -1,0 +1,61 @@
+{
+  "status": "implemented-with-demo1-layout",
+  "scope": "/demo2 only",
+  "intent": "사용자 피드백에 따라 demo1의 레이아웃을 유지하며 내과 전문 진료를 중심으로 서울바른의 로고·파란색·콘텐츠를 반영한다.",
+  "userConstraints": [
+    "/demo1 보존",
+    "/demo1 섹션 순서와 배치 유지",
+    "서울바른 로고와 파란색 유지",
+    "내과 전문 진료 강조",
+    "새 레이아웃 실험 되돌림"
+  ],
+  "skills": {
+    "design-taste-frontend": "병원 고유의 콘텐츠를 중심으로 구성하고 반복되는 기본 템플릿 표현을 검토한다.",
+    "impeccable": "타이포그래피·간격·시각적 계층·한국어 줄바꿈·모바일을 정리한다.",
+    "emil-design-eng": "상태 전달에 필요한 메뉴·탭·갤러리의 짧고 취소 가능한 전환을 설계한다.",
+    "ui-ux-pro-max": "Medical Clinic 데이터와 UX 지침을 참고하되 로고·색상·현재 스택과 한국어 콘텐츠를 우선한다.",
+    "web-design-guidelines": "구현 후 시맨틱 HTML·이미지 크기·포커스·모바일 조작·성능을 검토한다."
+  },
+  "research": {
+    "uiUxProMaxQuery": "medical clinic calm trustworthy",
+    "verifiedCategory": "Medical Clinic",
+    "verifiedStyle": "Accessible & Ethical",
+    "recommendedQualities": [
+      "읽기 쉬운 설명",
+      "확실한 대비와 포커스",
+      "명확한 방문 안내",
+      "44px 이상 주요 조작 영역",
+      "동작 줄이기 지원"
+    ],
+    "curation": [
+      "일반 데이터 출력의 Contact Sales/Get Quote 문구는 병원 방문 목적에 맞지 않아 채택하지 않는다.",
+      "데이터가 제시한 청록·초록 팔레트보다 사용자 지정 파란색을 우선한다.",
+      "영문 폰트 조합을 그대로 가져오지 않고 한국어 가독성으로 선택한다.",
+      "확인되지 않은 인증 로고·진료 성과·추천사·의료진 약력을 생성하지 않는다.",
+      "예약·보험 안내는 실제 운영 범위가 확인될 때만 구성한다.",
+      "추천된 GSAP 예시를 위해 새 애니메이션 의존성을 자동 추가하지 않는다."
+    ]
+  },
+  "antiGenericDesignCriteria": [
+    "모든 섹션을 동일한 카드 격자로 만들지 않고 정보의 성격에 맞춰 사진·목록·탭을 선택한다.",
+    "병원 이름만 바꾸면 다른 업종에도 통하는 추상적 홍보 문구를 줄인다.",
+    "로고·진료 정보·인물·시설 사진의 색과 시선을 일관되게 맞춘다.",
+    "반복되는 시설 이미지와 인위적인 포즈의 인물 사진을 검토하고 실제 사진으로 교체할 수 있게 한다.",
+    "브랜드 파란색은 주요 행동과 핵심 정보에 집중하고 장식 배지·그라데이션·발광 효과는 목적이 있는 경우만 사용한다.",
+    "모든 구간에 스크롤 애니메이션을 넣지 않고 읽기와 조작이 먼저 보이게 한다.",
+    "단순한 규칙 위반 수치 대신 실제 PC·모바일 화면과 한국어 내용을 함께 검토한다."
+  ],
+  "firstProposedSurface": [
+    "상단",
+    "첫 화면",
+    "방문 목적별 진료 안내",
+    "의료진 소개"
+  ],
+  "sources": [
+    "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+    "https://github.com/vercel-labs/agent-skills/tree/main/skills/web-design-guidelines",
+    "https://github.com/vercel-labs/web-interface-guidelines"
+  ],
+  "layoutAuthority": "/demo1",
+  "iterationPolicy": "구성과 섹션 순서·열 수를 유지하면서 각 영역의 사진 배치·색면·버튼 형태를 레퍼런스와 구별되게 변경한다. 단순한 간격·글자 보정으로 스타일 변경 요청을 대체하지 않는다."
+}

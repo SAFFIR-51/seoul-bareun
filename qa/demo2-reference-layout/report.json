@@ -1,0 +1,135 @@
+{
+  "date": "2026-10-20",
+  "route": "/demo2",
+  "layoutAuthority": "/demo1",
+  "userCorrection": "Keep the demo1 layout and express Seoul Barun identity through branding and clinic content.",
+  "confirmedFeature": "내과 전문",
+  "layout": {
+    "counts": [
+      {
+        "selector": "#content>section",
+        "demo1": 13,
+        "demo2": 13
+      },
+      {
+        "selector": "#section01 .item-wrap .item",
+        "demo1": 5,
+        "demo2": 5
+      },
+      {
+        "selector": "#section01 .item-wrap2 .item",
+        "demo1": 6,
+        "demo2": 6
+      },
+      {
+        "selector": "#section02 article",
+        "demo1": 3,
+        "demo2": 3
+      },
+      {
+        "selector": "#section03 .cmn-tabmenu .item",
+        "demo1": 10,
+        "demo2": 10
+      },
+      {
+        "selector": "#section04 .cmn-tabmenu .item",
+        "demo1": 5,
+        "demo2": 5
+      },
+      {
+        "selector": "#section05 .item-wrap .item",
+        "demo1": 6,
+        "demo2": 6
+      },
+      {
+        "selector": "#section06 .item-wrap .item",
+        "demo1": 4,
+        "demo2": 4
+      },
+      {
+        "selector": "#section07 .circle-wrap .item",
+        "demo1": 4,
+        "demo2": 4
+      },
+      {
+        "selector": "#section09 .item-wrap .item",
+        "demo1": 6,
+        "demo2": 6
+      },
+      {
+        "selector": "#section10 .item-wrap .item",
+        "demo1": 9,
+        "demo2": 9
+      },
+      {
+        "selector": "#gallery .swiper-slide",
+        "demo1": 20,
+        "demo2": 20
+      },
+      {
+        "selector": "#section11 .img-btn li",
+        "demo1": 20,
+        "demo2": 20
+      }
+    ],
+    "sectionOrder": [
+      "keyvisualMain",
+      "section01",
+      "section02",
+      "section03",
+      "section04",
+      "section05",
+      "section06",
+      "section07",
+      "section08",
+      "section09",
+      "section10",
+      "section11",
+      "section12"
+    ],
+    "desktopHeaderHeight": 213,
+    "desktopHeroHeight": 787
+  },
+  "preservation": {
+    "filesChecked": 8,
+    "changed": 0
+  },
+  "changes": [
+    "High-resolution supplied clinic logo",
+    "Logo blue replaces reference cyan in demo2 CSS",
+    "Plain clinic information replaces decorative gold/heart badges in existing header slots",
+    "Internal medicine focus in hero, profiles and department content",
+    "Department-specific descriptions replace repeated generic paragraphs",
+    "Facility photo captions corrected without changing nine-frame layout"
+  ],
+  "validation": {
+    "build": "passed: Next.js 16.4.2 production build and TypeScript",
+    "viewports": [
+      1440,
+      768,
+      390,
+      320
+    ],
+    "horizontalOverflow": false,
+    "brokenImages": 0,
+    "consoleErrors": 0,
+    "controls": [
+      "Hero arrows and pause control",
+      "Health checkup and nested six-program tabs",
+      "ArrowRight keyboard selection and focus",
+      "Endoscopy tabs",
+      "Gallery thumbnails",
+      "Mobile menu navigation and Escape",
+      "Contact and fees dialogs"
+    ]
+  },
+  "limits": [
+    "Existing AI demo photos remain; real clinic photography is not supplied",
+    "Doctor names, qualifications and operating details are not invented",
+    "Responsive browser checks, not physical device testing"
+  ],
+  "screenshots": [
+    "desktop.png",
+    "mobile.png"
+  ]
+}

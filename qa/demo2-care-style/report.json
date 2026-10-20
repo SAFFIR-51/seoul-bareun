@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-20",
+  "intent": "User requested a different visual style within the preserved reference layout, not only spacing and typography refinements.",
+  "scope": "demo2 care cards",
+  "preservation": {
+    "outsideCardsUnchanged": true,
+    "demo1ChangedFiles": 0
+  },
+  "changes": [
+    "Bright photo above white information panel",
+    "Removed dark photo overlay and circular plus",
+    "Left-aligned navy title and muted copy",
+    "Blue text link with small arrow",
+    "24px desktop and 12px mobile gaps"
+  ],
+  "layout": {
+    "desktop": "3 columns, 2 rows, 470px cards",
+    "mobile": "2 columns, 3 rows, 330px cards"
+  },
+  "validation": {
+    "build": "passed with TypeScript",
+    "viewports": [
+      1440,
+      768,
+      390,
+      320
+    ],
+    "horizontalOverflow": false,
+    "textActionOverlaps": 0,
+    "allSixLinks": "passed",
+    "keyboard": "Tab and Enter passed with blue visible focus ring",
+    "consoleErrors": 0,
+    "sourceLint": "passed with a documented functional navigation-boundary exception"
+  },
+  "screenshots": [
+    "desktop.png",
+    "mobile.png"
+  ],
+  "previousStyle": "../demo2-care-cards/desktop.png",
+  "limits": [
+    "Browser responsive checks, not physical-device testing",
+    "Existing AI demo photos retained"
+  ],
+  "latestChange": "Removed visible 안내 보기 text and arrow row; card height now follows content, with 400px desktop and 260px mobile minimums.",
+  "currentScreenshot": "no-label-desktop.png"
+}

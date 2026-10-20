@@ -1,0 +1,5 @@
+import ClinicHome from "./clinic-home";
+
+export default function DemoTwoPage() {
+  return <ClinicHome />;
+}

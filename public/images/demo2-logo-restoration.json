@@ -1,0 +1,15 @@
+{
+  "generator": "built-in image_gen",
+  "intent": "Restore the supplied logo at higher resolution while retaining its branding",
+  "original": "public/images/seoul-bareun-logo.png",
+  "generatedSource": "public/images/seoul-bareun-logo-hd-source.png",
+  "webLogo": "public/images/seoul-bareun-logo-hd.png",
+  "symbol": "public/reference-assets/demo2-brand-symbol.svg",
+  "size": {
+    "width": 1935,
+    "height": 486
+  },
+  "prompt": "Edit target: the attached existing Seoul Bareun Medical Clinic logo image. This is a resolution restoration job, NOT a redesign. Create an exceptionally crisp, high-resolution faithful reproduction of the exact supplied horizontal Korean clinic wordmark on pure white. Preserve the exact blue stomach/medical icon silhouette at the left, its blue rectangular architectural outline and tiny Korean lettering, the exact text \"서울바른내과\", its exact relative spacing, gray \"서울\", blue \"바른\", gray \"내과\", and the exact small English text \"SEOUL BARUN MEDICAL CLINIC\" below. Match every stroke shape, position, weight, color and overall horizontal proportions as closely as possible to the input. Remove raster blur and stair-step edges, use clean flat logo-like contours. No new elements, no extra text, no shadows, no gradients, no altered branding, no mockup, no photographic scene. Frame the whole horizontal logo close to the edges with a modest white margin. High resolution, at least 1500px wide; original design unchanged.",
+  "export": "White margin trimmed and 24px padding added; 256-color PNG web export without dithering; symbol exported separately to reduce payload. No sharpening filter.",
+  "appliedTo": "/demo2 only"
+}

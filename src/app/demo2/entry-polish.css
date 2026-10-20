@@ -1,0 +1,41 @@
+/* First refinement pass: header and hero only. Demo1's page composition stays fixed. */
+#header .header-top .top-content { border-bottom-color:#e1e6ec; }
+#header .header-top .gnb-wrap { border-bottom-color:#e1e6ec; }
+#header h1 img { width:330px; height:100px; }
+#header .bareun-header-note { font-size:13px; line-height:1.65; color:#586575; }
+#header .bareun-header-note b { font-size:15px; line-height:1.5; margin-bottom:5px; letter-spacing:-.02em; }
+#header .bareun-header-note-right b { color:#344b64; }
+#keyvisualMain .slide .swiper-slide .txt-top { display:none; }
+#keyvisualMain .slide .swiper-slide .title { margin:0 0 24px; font-size:64px; line-height:1.35; letter-spacing:-.035em; }
+#keyvisualMain .slide .bareun-hero-lead { display:block; margin-bottom:16px; font-size:34px; font-weight:300; line-height:1.5; letter-spacing:-.025em; }
+#keyvisualMain .slide .swiper-slide .title b { display:block; font-weight:700; }
+#keyvisualMain .slide .swiper-slide .subscript { margin:0 auto 38px; max-width:46ch; font-size:19px; line-height:1.8; letter-spacing:-.02em; text-align:center; }
+#keyvisualMain .slide .swiper-slide .btn { max-width:240px; height:60px; font-size:17px; font-weight:500; letter-spacing:-.02em; transition:background-color 160ms var(--bareun-ease),color 160ms var(--bareun-ease),transform 140ms var(--bareun-ease); }
+#keyvisualMain .slide .swiper-slide .btn:active { transform:scale(.98); }
+@media(hover:hover) and (pointer:fine) {
+  #keyvisualMain .slide .swiper-slide .btn:hover { background:#fff; color:#214d82; }
+}
+/* The center band protects white copy contrast; brighter edges retain the room's light. */
+#keyvisualMain .box-image:after { background:linear-gradient(180deg, rgb(0 0 0 / .26) 0%, rgb(0 0 0 / .58) 28%, rgb(0 0 0 / .58) 74%, rgb(0 0 0 / .32) 100%); } /* taste-skill-ignore: neutral photo scrim protects white copy contrast while retaining light at the image edges. */
+@media(min-width:1280px) {
+  #header .header-top .logos .box .logo1 { margin-right:34px; }
+  #header .header-top .gnb-wrap #gnb ul { max-width:1240px; margin-inline:auto; }
+  #header .header-top .gnb-wrap #gnb ul li { flex:1; min-width:0; text-align:center; }
+  #header .header-top .gnb-wrap #gnb ul li a { padding:0 12px; font-size:17px; letter-spacing:-.025em; font-weight:500; transition:color 140ms var(--bareun-ease); }
+}
+@media(max-width:1279px) {
+  #header h1 img { width:auto; height:44px; }
+  #keyvisualMain .slide .swiper-slide .title { font-size:54px; }
+  #keyvisualMain .slide .bareun-hero-lead { font-size:30px; }
+}
+@media(max-width:768px) {
+  #header .header-top .top-content h1 img { width:auto; height:44px; }
+  #keyvisualMain .slide .swiper-slide .title { font-size:clamp(32px,8.6vw,42px); line-height:1.4; margin-bottom:22px; }
+  #keyvisualMain .slide .bareun-hero-lead { font-size:clamp(20px,5.4vw,25px); line-height:1.5; margin-bottom:14px; }
+  #keyvisualMain .slide .swiper-slide .subscript { font-size:16px; max-width:27ch; margin-bottom:30px; line-height:1.8; }
+  #keyvisualMain .slide .swiper-slide .btn { max-width:210px; height:54px; font-size:16px; }
+  #keyvisualMain .swiper-slide:nth-child(2) .box-image img { object-position:60% center; }
+}
+@media(prefers-reduced-motion:reduce) {
+  #keyvisualMain .slide .swiper-slide .btn:active { transform:none; }
+}

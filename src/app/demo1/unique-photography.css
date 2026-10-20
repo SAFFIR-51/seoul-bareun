@@ -1,0 +1,15 @@
+/* Demo1 unique photographs: one source per content position. */
+.demo1 #section01 .item-wrap2 .item.bg1 { background-image: url('/images/demo1-unique/care-checkup.webp'); }
+.demo1 #section01 .item-wrap2 .item.bg2 { background-image: url('/images/demo1-unique/care-endoscopy.webp'); }
+.demo1 #section01 .item-wrap2 .item.bg3 { background-image: url('/images/demo1-unique/care-ultrasound.webp'); }
+.demo1 #section01 .item-wrap2 .item.bg4 { background-image: url('/images/demo1-unique/care-chronic.webp'); }
+.demo1 #section01 .item-wrap2 .item.bg5 { background-image: url('/images/demo1-unique/care-infusion.webp'); }
+.demo1 #section01 .item-wrap2 .item.bg6 { background-image: url('/images/demo1-unique/care-vaccine.webp'); }
+.demo1 #section03 .emotion-wrap { background-image: linear-gradient(#0009, #0009), url('/images/demo1-unique/checkup-banner.webp'); }
+.demo1 #section06 .item-wrap .item .bg01 { background-image: url('/images/demo1-unique/chronic-general.webp'); }
+.demo1 #section06 .item-wrap .item .bg02 { background-image: url('/images/demo1-unique/respiratory.webp'); }
+.demo1 #section06 .item-wrap .item .bg03 { background-image: url('/images/demo1-unique/thyroid-consult.webp'); }
+.demo1 #section06 .item-wrap .item .bg04 { background-image: url('/images/demo1-unique/allergy-consult.webp'); }
+.demo1 #section07 { background-image: linear-gradient(rgba(5,31,72,.84), rgba(5,31,72,.84)), url('/images/demo1-unique/philosophy-background.webp'); }
+.demo1 #section08 .box-wrap .bg01 { background-image: url('/images/demo1-unique/infusion-treatment.webp'); }
+.demo1 #section08 .box-wrap .bg02 { background-image: url('/images/demo1-unique/wellness-consult.webp'); }

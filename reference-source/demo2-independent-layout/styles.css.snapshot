@@ -1,0 +1,5 @@
+@import "./reference-fonts.css";
+html:has([data-bareun-site]){font-size:16px;scroll-behavior:smooth;scroll-padding-top:112px;scrollbar-gutter:stable}
+body:has([data-bareun-site]){margin:0;background:#fff}
+@media(max-width:1100px){html:has([data-bareun-site]){scroll-padding-top:96px}}
+@media(prefers-reduced-motion:reduce){html:has([data-bareun-site]){scroll-behavior:auto}}

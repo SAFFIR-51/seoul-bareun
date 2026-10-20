@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-20",
+  "scope": "Six care cards in demo2 only",
+  "preservation": {
+    "outsideCardsUnchanged": true,
+    "demo1FilesChanged": 0
+  },
+  "layout": {
+    "desktop": {
+      "columns": 3,
+      "rows": 2,
+      "cardHeight": 470
+    },
+    "mobile": {
+      "columns": 2,
+      "rows": 3,
+      "cardHeight": 308,
+      "descriptionHeights": [
+        56,
+        56,
+        56,
+        56,
+        56,
+        56
+      ]
+    },
+    "photoOrder": "unchanged"
+  },
+  "validation": {
+    "build": "passed including TypeScript",
+    "sourceLint": "care-cards.css: 0 FAIL, 0 WARN",
+    "viewports": [
+      1440,
+      768,
+      390,
+      320
+    ],
+    "horizontalOverflow": false,
+    "consoleErrors": 0,
+    "allSixDestinationsVerified": true,
+    "nestedAnchors": 0,
+    "keyboard": {
+      "Tab": "moves between cards",
+      "Enter": "navigates and focuses destination section",
+      "focusRing": "3px inset white outline"
+    }
+  },
+  "controls": "One native anchor per photo frame; decorative plus is hidden from accessibility tree",
+  "screenshots": [
+    "before-desktop.png",
+    "desktop.png",
+    "mobile.png"
+  ],
+  "limits": [
+    "Browser responsive emulation, not physical device testing",
+    "Existing generated demo photographs retained",
+    "Standalone Taste browser inspector not run; CUA visual inspection and source lint used"
+  ]
+}
