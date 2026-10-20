@@ -2,6 +2,7 @@
 @import "./reference-fonts.css";
 @import "./reference-common.css";
 @import "./reference-main.css";
+@import "./header-badges.css";
 
 /* Layout and responsive dimensions follow the supplied reference. */
 img{display:inline-block}button{cursor:pointer}a:focus-visible,button:focus-visible,[role=button]:focus-visible,[role=tab]:focus-visible{outline:2px solid #0578b2;outline-offset:5px}html{scroll-behavior:smooth}.f3{font-family:'GmarketWeb',sans-serif;font-weight:700}
@@ -222,3 +223,27 @@ dialog[open] { animation: bareun-dialog-in 200ms var(--bareun-ease); }
 .demo1 #section07 { background-image: linear-gradient(rgba(5,31,72,.84), rgba(5,31,72,.84)), url('/images/demo1-unique/philosophy-background.webp'); }
 .demo1 #section08 .box-wrap .bg01 { background-image: url('/images/demo1-unique/infusion-treatment.webp'); }
 .demo1 #section08 .box-wrap .bg02 { background-image: url('/images/demo1-unique/wellness-consult.webp'); }
+
+/* Keep the revised section titles readable on narrow phones. */
+@media (max-width: 768px) {
+  .demo1 #keyvisualMain .slide .swiper-slide .title {
+    font-size: clamp(24px, 6.2vw, 34px);
+    line-height: 1.45;
+    margin-bottom: 20px;
+  }
+  .demo1 #keyvisualMain .slide .swiper-slide .subscript {
+    font-size: 16px;
+    max-width: 32ch;
+    margin: 0 auto 30px;
+  }
+  .demo1 #keyvisualMain .slide .swiper-slide .btn {
+    font-size: 16px;
+    max-width: 220px;
+    height: 50px;
+  }
+}
+@media (max-width: 390px) {
+  .demo1 .cmn-tit .title {
+    font-size: clamp(22px, 6.66vw, 26px);
+  }
+}

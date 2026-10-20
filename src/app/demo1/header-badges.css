@@ -1,0 +1,20 @@
+/* Text-only notes beside demo1's existing logo. */
+.demo1 #header .reference-badge {
+  color: #182b43;
+}
+
+.demo1 #header .reference-badge p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -.025em;
+}
+
+.demo1 #header .reference-badge b {
+  color: #10243c;
+  font-weight: 700;
+}
+
+@media (min-width: 1280px) and (max-width: 1490px) {
+  .demo1 #header .reference-badge p { font-size: 12px; }
+}
