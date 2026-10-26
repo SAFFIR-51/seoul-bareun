@@ -1,5 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./styles.css";
+import "./visit-information.css";
+import "./health-channel.css";
+import "./header-brand.css";
+import "./director-profile.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://seoul-bareun.vercel.app"),

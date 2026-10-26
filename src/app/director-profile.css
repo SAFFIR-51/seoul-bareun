@@ -1,0 +1,31 @@
+.demo1 #section02 article.clinic-director-profile .article-wrap { display: grid; grid-template-columns: minmax(0,1.3fr) minmax(0,.85fr); gap: 32px; align-items: end; min-height: 0; padding: 90px 0 0; overflow: visible; }
+.demo1 #section02 article.clinic-director-profile .info { width: auto; padding-bottom: 70px; }
+.demo1 #section02 article.clinic-director-profile .name { margin-bottom: 34px; line-height: 1.4; }
+.demo1 #clinic-director-name { scroll-margin-top: 100px; }
+.demo1 #section02 .clinic-director-specialty { display: block; margin-top: 8px; font-family: NotoSansWeb,sans-serif; font-size: 18px; font-weight: 400; letter-spacing: -.02em; color: #555f68; }
+.demo1 #section02 article.clinic-director-profile .list-wrap { display: grid; grid-template-columns: 110px minmax(0,1fr); column-gap: 24px; row-gap: 30px; align-items: start; }
+.demo1 #section02 article.clinic-director-profile .list-wrap .tit { width: 110px; height: 46px; margin: 0; font-size: 18px; font-weight: 500; }
+.demo1 #section02 article.clinic-director-profile .list-wrap ul { width: auto; margin: 0; }
+.demo1 #section02 article.clinic-director-profile .list-wrap li { padding-left: 12px; font-size: 17px; line-height: 1.85; letter-spacing: -.035em; word-break: keep-all; overflow-wrap: anywhere; }
+.demo1 #section02 article.clinic-director-profile .list-wrap li + li { margin-top: 4px; }
+.demo1 #section02 article.clinic-director-profile .list-wrap strong { font-weight: 700; }
+.demo1 #section02 article.clinic-director-profile .img { position: relative; right: auto; bottom: auto; width: 100%; }
+.demo1 #section02 article.clinic-director-profile .img img { display: block; width: 100%; height: auto; max-width: 100%; max-height: none; aspect-ratio: auto; object-fit: contain; object-position: center bottom; }
+@media (min-width:1280px) {
+  .demo1 #section02 article.clinic-director-profile > .mwidth { max-width: min(1420px,calc(100% - 220px)); }
+}
+@media (max-width:1000px) {
+  .demo1 #section02 article.clinic-director-profile .article-wrap { grid-template-columns: 1fr; padding-top: 60px; gap: 15px; }
+  .demo1 #section02 article.clinic-director-profile .info { padding-bottom: 10px; }
+  .demo1 #section02 article.clinic-director-profile .img { width: min(400px,100%); margin-inline: auto; }
+}
+@media (max-width:768px) {
+  .demo1 #section02 article.clinic-director-profile .article-wrap { padding-top: 45px; }
+  .demo1 #section02 article.clinic-director-profile .name { font-size: 30px; margin-bottom: 28px; }
+  .demo1 #section02 .clinic-director-specialty { font-size: 16px; }
+  .demo1 #section02 article.clinic-director-profile .list-wrap { grid-template-columns: 1fr; row-gap: 18px; }
+  .demo1 #section02 article.clinic-director-profile .list-wrap .tit { width: 100px; height: 40px; font-size: 17px; }
+  .demo1 #section02 article.clinic-director-profile .list-wrap ul + .tit { margin-top: 12px; }
+  .demo1 #section02 article.clinic-director-profile .list-wrap li { font-size: 16px; line-height: 1.8; }
+  .demo1 #section02 article.clinic-director-profile .img { width: min(320px,100%); }
+}

@@ -1,0 +1,40 @@
+/* Real visit information; keep the established demo1 section and sidebar layout. */
+.demo1 #section12 .guide-txt { margin: 36px 0 28px; line-height: 1.7; font-size: 24px; font-weight: 500; word-break: keep-all; }
+.demo1 #section12 .clinic-neighborhood { display: inline-block; color: #555; }
+.demo1 #section12 .map { height: 440px; background: #eef1f3; }
+.demo1 #section12 .map iframe { display: block; width: 100%; height: 100%; border: 0; }
+.demo1 #section12 .clinic-map-actions { display: flex; justify-content: center; gap: 12px; margin-top: 20px; }
+.demo1 #section12 .clinic-map-actions a { display: inline-flex; align-items: center; justify-content: center; gap: 16px; min-height: 52px; padding: 12px 24px; box-sizing: border-box; background: #214d82; color: #fff; font-size: 17px; font-weight: 500; border-radius: 4px; }
+.demo1 #section12 .clinic-map-actions a + a { background: #edf2f7; color: #214d82; }
+.demo1 #section12 .item-wrap .item .box { display: flex; flex-direction: column; align-items: center; text-align: center; }
+.demo1 #section12 .time-table-wrap { display: block; width: fit-content; max-width: 100%; box-sizing: border-box; margin-inline: auto; padding: 0 20px; }
+.demo1 #section12 .time-table .table-line { display: grid; grid-template-columns: 76px max-content; gap: 12px; padding: 4px 0; text-align: left; }
+.demo1 #section12 .time-table .table-tit { display: block; width: auto; padding: 0; font-size: 17px; line-height: 1.8; }
+.demo1 #section12 .time-table .table-txt { display: block; width: auto; font-size: 17px; line-height: 1.8; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.demo1 #section12 .item-wrap .item :is(.txt1,.txt2) { padding-inline: 20px; font-size: 18px; line-height: 1.8; word-break: keep-all; }
+.demo1 #section12 .item-wrap .item .tel { align-items: center; flex-wrap: wrap; gap: 10px; padding-inline: 12px; }
+.demo1 #section12 .item-wrap .item .tel > span { margin: 0; line-height: 1.4; }
+.demo1 #section12 .item-wrap .item .tel :is(a, .clinic-phone-pending) { font-size: 30px; letter-spacing: -.025em; white-space: nowrap; }
+.demo1 #clinic-hours { scroll-margin-top: 80px; }
+.demo1 #footer address a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+.quick-wrap.clinic-quick-links .btn-tel .f3 { font-family: NotoSansWeb, sans-serif; font-size: 17px; line-height: 1.5; letter-spacing: 0; }
+.quick-wrap.clinic-quick-links .clinic-hours-link img { width: 30px; height: 30px; object-fit: contain; }
+@media (min-width:1280px) {
+  .demo1 #section12 > .mwidth { max-width: min(1420px, calc(100% - 220px)); }
+}
+@media (hover:hover) and (pointer:fine) {
+  .demo1 #section12 .clinic-map-actions a:hover { background: #173b61; color: #fff; }
+}
+@media (max-width:1279px) {
+  .quick-wrap.clinic-quick-links .btn-tel .f3 { font-size: 0; }
+}
+@media (max-width:768px) {
+  .demo1 #section12 .guide-txt { font-size: 20px; margin-block: 24px; }
+  .demo1 #section12 .map { height: 320px; }
+  .demo1 #section12 .clinic-map-actions { gap: 8px; }
+  .demo1 #section12 .clinic-map-actions a { flex: 1; padding: 12px 8px; gap: 6px; font-size: 16px; }
+  .demo1 #section12 .time-table-wrap { padding-inline: 12px; }
+  .demo1 #section12 .time-table .table-line { grid-template-columns: 64px max-content; gap: 8px; }
+  .demo1 #section12 .time-table :is(.table-tit,.table-txt) { font-size: 16px; }
+  .quick-wrap.clinic-quick-links .clinic-hours-link img { width: 24px; height: 24px; }
+}

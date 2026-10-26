@@ -1,7 +1,0 @@
-{
-  "generator": "Built-in image_gen",
-  "source": "C:\\Users\\MinSeo\\.codex\\generated_images\\01a156b9-020a-7da3-a93a-f7037aa7d8f7\\exec-40bcebc8-4ce7-4cc8-9c6a-2682a1a5b9bf.png",
-  "prompt": "Use case: identity-preserve, precise pose edit. Image 1 is the exact selected doctor's identity reference. Image 2 is a POSE AND FRAMING reference only; do NOT use image 2's face or glasses. Create an updated medical-team portrait of the same Korean male doctor from image 1, keeping his recognizable exact face, apparent age, hairstyle, facial expression, natural skin detail, white coat and open-collar light-blue shirt. Change only his seated pose to standing upright, shoulders relaxed, elbows at his sides, with both hands naturally clasped together in front of his lower abdomen, like the standing doctor in image 2. His head should be upright and facing the camera with a gentle reserved smile. Vertical portrait from full head to upper thighs with some margin around shoulders and above hair. Natural realistic anatomy and hands. No sitting, chair, desk, bent seated knees, furniture, objects or additional people. Keep a genuinely transparent alpha background and no cast shadow, halo, label, logo or watermark. Do not make him look like the pose-reference man.",
-  "identityReference": "/images/physician.png",
-  "poseReference": "/images/physician-02.png"
-}

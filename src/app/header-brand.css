@@ -1,0 +1,15 @@
+/* High-resolution PNGs preserve the supplied wordmark at every header size. */
+.demo1 #header .header-top .top-content .clinic-header-brand { --brand-height: 74px; display: inline-flex; align-items: center; gap: 10px; color: #111; text-decoration: none; }
+.demo1 #header .header-top .top-content .clinic-header-symbol { display: block; flex: none; width: auto; height: var(--brand-height); object-fit: contain; clip-path: none; }
+.demo1 #header .clinic-header-wordmark { display: block; flex: none; line-height: 0; text-align: center; }
+.demo1 #header .header-top .top-content .clinic-header-wordmark-image { display: block; width: auto; height: var(--brand-height); object-fit: contain; clip-path: none; }
+.demo1 .cmn-tit .symbol img { width: 64px; height: 54px; object-fit: contain; }
+@media (max-width:768px) {
+  .demo1 .cmn-tit .symbol img { width: 52px; height: 44px; }
+}
+@media (max-width:1279px) {
+  .demo1 #header .header-top .top-content .clinic-header-brand { --brand-height: 36px; gap: 8px; }
+}
+@media (max-width:359px) {
+  .demo1 #header .header-top .top-content .clinic-header-brand { --brand-height: 32px; gap: 8px; }
+}

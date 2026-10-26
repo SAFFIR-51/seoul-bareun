@@ -1,5 +1,6 @@
-import { redirect } from "next/navigation";
+import ReferenceExperience from "./reference-experience";
+import content from "./reference-content.json";
 
 export default function Home() {
-  redirect("/demo1");
+  return <ReferenceExperience markup={content.markup} />;
 }
