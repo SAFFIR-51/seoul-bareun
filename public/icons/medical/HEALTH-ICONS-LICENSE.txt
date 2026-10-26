@@ -1,0 +1,6 @@
+Health Icons — Resolve to Save Lives and contributors
+https://healthicons.org/
+https://github.com/resolvetosavelives/healthicons
+Icons are dedicated to the public domain under CC0 1.0.
+https://creativecommons.org/publicdomain/zero/1.0/
+Adaptation: navy outlines with pale blue fill; original icon geometry retained.

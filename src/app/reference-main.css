@@ -55,11 +55,11 @@
 }
 #keyvisualMain .slide .arrow-prev {
 	left: 160px;
-	background-image: url('/reference-assets/keyvisual_prev.png');
+	background-image: url('/icons/interface/arrow-prev.svg');
 }
 #keyvisualMain .slide .arrow-next {
 	right: 160px;
-	background-image: url('/reference-assets/keyvisual_next.png');
+	background-image: url('/icons/interface/arrow-next.svg');
 }
 
 #keyvisualMain .slide .box-text {
@@ -1498,11 +1498,11 @@
 }
 #gallery .arrow-prev {
 	left: -100px;
-	background: url('/reference-assets/se11_btn_prev.png') no-repeat center;
+	background: url('/icons/interface/arrow-prev.svg') no-repeat center;
 }
 #gallery .arrow-next {
 	right: -100px;
-	background: url('/reference-assets/se11_btn_next.png') no-repeat center;
+	background: url('/icons/interface/arrow-next.svg') no-repeat center;
 }
 @media (max-width: 1279px) {
 	#section11 .slide-wrap {

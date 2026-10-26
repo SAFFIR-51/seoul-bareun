@@ -1,0 +1,133 @@
+[
+  {
+    "id": "gastric-ulcer",
+    "path": "/images/clinical/gastric-ulcer.webp",
+    "label": "위궤양 내시경 소견",
+    "title": "Gastric ulcer 2.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Gastric_ulcer_2.jpg",
+    "author": "Samir at en.wikipedia",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "description": "Endoscopic picture of gastric ulcer with visible vessel.  Reproduced with permission of patient. -- <a href=\"https://en.wikipedia.org/wiki/User:Samir\" class=\"extiw\" title=\"en:User:Samir\">Samir</a> 00:53, 5 May 2006 (UTC)"
+  },
+  {
+    "id": "colon-polyp",
+    "path": "/images/clinical/colon-polyp.webp",
+    "label": "대장 용종 내시경 소견",
+    "title": "Polyp.jpeg",
+    "source": "https://commons.wikimedia.org/wiki/File:Polyp.jpeg",
+    "author": "Original uploader was Rsabbatini at en.wikipedia\n\nLater version(s) were uploaded by Kd4ttc at en.wikipedia.",
+    "license": "CC BY 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+    "description": "Colon polyp on a short stalk.\n<pre>Attribute to Stephen Holland, M.D., Naperville Gastroenterology, Naperville, IL, USA.\n</pre>\n<a href=\"https://en.wikipedia.org/wiki/Category:Endoscopic_images\" class=\"extiw\" title=\"en:Category:Endoscopic images\">en:Category:Endoscopic images</a>"
+  },
+  {
+    "id": "diabetes-retina",
+    "path": "/images/clinical/diabetes-retina.webp",
+    "label": "당뇨병성 망막병증 소견",
+    "title": "Fundus retinopathy EDA03.JPG",
+    "source": "https://commons.wikimedia.org/wiki/File:Fundus_retinopathy_EDA03.JPG",
+    "author": "Wikimedia Commons 원본 파일 참조",
+    "license": "Public domain",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "description": "<p>In background retinopathy  \t\n</p><p>Description: In background retinopathy, a slight deterioration in the small blood vessels of the retina, portions of the vessels may swell and leak fluid into the surrounding retinal tissue.\n</p><p>Credit: National Eye Institute, National Institutes of Health\n</p>\nRef#: EDA03"
+  },
+  {
+    "id": "pneumonia",
+    "path": "/images/clinical/pneumonia.webp",
+    "label": "폐렴 흉부 X선 소견",
+    "title": "X-ray of lobar pneumonia.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:X-ray_of_lobar_pneumonia.jpg",
+    "author": "Mikael Häggström, M.D. Author info - Reusing images- Conflicts of interest:  None\nMikael Häggström, M.D.Consent note: Written informed consent was obtained from the individual, including online publication.",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "description": "<a href=\"https://en.wikipedia.org/wiki/Chest_radiograph\" class=\"extiw\" title=\"en:Chest radiograph\">Chest radiograph</a> of a 67 year old man, showing <a href=\"https://en.wikipedia.org/wiki/Lobar_pneumonia\" class=\"extiw\" title=\"en:Lobar pneumonia\">lobar pneumonia</a>, affecting the right middle lobe. Culture from the nasopharynx only showed <a href=\"https://en.wikipedia.org/wiki/Moraxella_catarrhalis\" class=\"extiw\" title=\"en:Moraxella catarrhalis\">Moraxella catarrhalis</a>, which is probably not the pathogen of the lung.."
+  },
+  {
+    "id": "thyroid-nodule",
+    "path": "/images/clinical/thyroid-nodule.webp",
+    "label": "갑상선 결절 초음파 소견",
+    "title": "Thyroid ultrasound 110304142324 1436410.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Thyroid_ultrasound_110304142324_1436410.jpg",
+    "author": "Nevit Dilmen (talk)",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "Ultrasound image of thyroid nodule"
+  },
+  {
+    "id": "liver",
+    "path": "/images/clinical/liver.webp",
+    "label": "지방간 초음파 소견",
+    "title": "Ultrasound of grade 2 fatty right liver lobe.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Ultrasound_of_grade_2_fatty_right_liver_lobe.jpg",
+    "author": "Cerevisae",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "description": "Ultrasound of grade 2 fatty right liver lobe. Features suggestive of fatty liver (hepatic steatosis) are: diffuse increase in liver echogenicity, echogenic portal vein wall is barely visible, and difficulty to visualise the posterior right liver lobe."
+  },
+  {
+    "id": "carotid",
+    "path": "/images/clinical/carotid.webp",
+    "label": "경동맥 협착 초음파 소견",
+    "title": "RICA Stenosis 174302500.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:RICA_Stenosis_174302500.jpg",
+    "author": "Nevit Dilmen (talk)",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "R internal Carotid artery stenosis, less than 70%"
+  },
+  {
+    "id": "breast",
+    "path": "/images/clinical/breast.webp",
+    "label": "유방 낭종 초음파 소견",
+    "title": "Breast ultrasound 110302093640 0942031.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Breast_ultrasound_110302093640_0942031.jpg",
+    "author": "Nevit Dilmen (talk)",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "Ultrasound images of simple breast cysts"
+  },
+  {
+    "id": "heart",
+    "path": "/images/clinical/heart.webp",
+    "label": "심장 초음파 4방 단면 영상",
+    "title": "Echocardiogram 4chambers.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Echocardiogram_4chambers.jpg",
+    "author": "Wikimedia Commons 원본 파일 참조",
+    "license": "Public domain",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  {
+    "id": "dialysis",
+    "path": "/images/clinical/dialysis.webp",
+    "label": "혈액투석실 참고 사진",
+    "title": "Bed side Dialysis.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Bed_side_Dialysis.jpg",
+    "author": "Irvin calicut at Malayalam Wikipedia",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "Dialysis machine with bed side setup"
+  },
+  {
+    "id": "prostate",
+    "path": "/images/clinical/prostate.webp",
+    "label": "전립선 초음파 영상",
+    "title": "Ultrasound Scan ND 0103115311 1156280.png",
+    "source": "https://commons.wikimedia.org/wiki/File:Ultrasound_Scan_ND_0103115311_1156280.png",
+    "author": "Nevit Dilmen",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "Medical ultrasound image. Provided as-is. Please feel free to categorise, add description, crop."
+  },
+  {
+    "id": "asthma-inhaler",
+    "path": "/images/clinical/asthma-inhaler.webp",
+    "label": "천식 치료용 흡입기",
+    "title": "Asthma inhaler (44244172811).jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Asthma_inhaler_(44244172811).jpg",
+    "author": "NIAID",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "description": "An asthma inhaler. Credit: NIAID; resized for web display."
+  }
+]

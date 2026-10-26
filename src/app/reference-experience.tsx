@@ -6,7 +6,7 @@ export default function ReferenceExperience({ markup }: { markup: string }) {
   const rootRef = useRef<HTMLDivElement>(null);
   const dialogRef = useRef<HTMLDialogElement>(null);
   const returnFocus = useRef<HTMLElement | null>(null);
-  const [dialog, setDialog] = useState<"contact" | "fees" | "video" | "kakao" | null>(null);
+  const [dialog, setDialog] = useState<"contact" | "fees" | "kakao" | null>(null);
   const html = useMemo(() => ({ __html: markup }), [markup]);
 
   useEffect(() => {
@@ -132,7 +132,6 @@ export default function ReferenceExperience({ markup }: { markup: string }) {
     function handleClick(event: MouseEvent) {
       const target = event.target as Element;
       if (target.closest("[data-kakao-pending]")) { event.preventDefault(); setDialog("kakao"); return; }
-      if (target.closest("[data-video-pending]")) { event.preventDefault(); setDialog("video"); return; }
       if (target.closest(".reference-quick-toggle")) { setQuick(!quickOpen); return; }
       if (quickOpen && !target.closest(".quick-wrap")) setQuick(false);
       if (quickOpen && target.closest(".quick-wrap a")) setQuick(false, true);
@@ -231,12 +230,10 @@ export default function ReferenceExperience({ markup }: { markup: string }) {
       }}>
       <button className="reference-dialog-close" onClick={() => setDialog(null)} aria-label="닫기">×</button>
       <p>SEOUL BARUN INTERNAL MEDICINE</p>
-      <h2 id="reference-dialog-title">{dialog === "kakao" ? "카톡 상담 안내" : dialog === "video" ? "추후 연결 예정입니다." : dialog === "fees" ? "비급여 항목 안내" : "상담 및 방문 안내"}</h2>
+      <h2 id="reference-dialog-title">{dialog === "kakao" ? "카톡 상담 안내" : dialog === "fees" ? "비급여 항목 안내" : "상담 및 방문 안내"}</h2>
       <div id="reference-dialog-description">
         {dialog === "kakao"
           ? "카카오톡 상담 채널은 추후 연결됩니다."
-          : dialog === "video"
-          ? "(저작권 이슈)"
           : dialog === "fees"
           ? "비급여 항목과 비용은 추후 추가됩니다."
           : "대표전화는 추후 추가됩니다. 서울특별시 동대문구 고산자로 435, 3층(제기동)에 있습니다."}

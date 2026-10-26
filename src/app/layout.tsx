@@ -2,14 +2,15 @@ import type { Metadata } from "next";
 import "./globals.css";
 import "./styles.css";
 import "./visit-information.css";
-import "./health-channel.css";
+
 import "./header-brand.css";
 import "./director-profile.css";
+import "./clinic-refinement.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://seoul-bareun.vercel.app"),
   title: "서울 바른내과",
-  description: "서울바른내과 홈페이지 데모입니다. 진료 안내와 병원 공간을 미리 둘러보세요.",
+  description: "서울바른내과 · 건강검진센터 · 인공신장실. 한정석 원장의 내시경 진료, 정밀 초음파, 만성질환 관리와 투석 상담을 안내합니다.",
   openGraph: {
     type: "website",
     locale: "ko_KR",

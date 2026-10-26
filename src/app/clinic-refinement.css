@@ -1,0 +1,188 @@
+/* Clinic content uses intrinsic heights and explicit desktop/tablet/mobile grids. */
+:root { --clinic-navy:#183b56; --clinic-teal:#087f8c; --clinic-line:#dce7ed; }
+.demo1 section { overflow-wrap:anywhere; }
+.demo1 .medical-icon { object-fit:contain; filter:none; }
+.demo1 #section01 .item-wrap img.medical-icon { width:88px; height:88px; }
+.demo1 #section03 img.medical-icon { width:82px; height:82px; }
+.demo1 #section04 .ico-wrap img.medical-icon { width:96px; height:96px; }
+.demo1 #section12 .ico img.medical-icon { width:76px; height:76px; }
+.demo1 #section04 .ico-wrap { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:24px; margin:55px 0 70px; }
+.demo1 #section04 .ico-wrap li { width:auto; padding:0; margin:0; }
+.demo1 #section04 .ico-wrap figure { margin:0; }
+.demo1 #section04 .ico-wrap figcaption { font-size:16px; line-height:1.7; }
+.demo1 .endoscopy-record { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); position:relative; max-width:850px; margin:56px auto 40px; padding:36px 28px 26px; background:#f0f6f8; border-radius:4px; text-align:center; }
+.demo1 .endoscopy-record>div+div { border-left:1px solid #cddde6; }
+.demo1 .endoscopy-record span { display:block; font-size:18px; color:#486174; }
+.demo1 .endoscopy-record strong { display:block; font-family:GmarketWeb,sans-serif; font-size:clamp(34px,4.5vw,62px); font-weight:500; letter-spacing:-.06em; color:var(--clinic-navy); line-height:1.6; }
+.demo1 .endoscopy-record small { font-family:NotoSansWeb,sans-serif; font-size:18px; margin-left:8px; }
+.demo1 .endoscopy-record p { grid-column:1/-1; margin:12px 0 0; font-size:13px; color:#617685; }
+.demo1 .care-difference { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:32px; margin:48px 0 0; }
+.demo1 .care-difference article { border-top:1px solid #cddde6; padding:26px 0; }
+.demo1 .feature-number { display:block; color:var(--clinic-teal); font:500 16px GmarketWeb,sans-serif; margin-bottom:22px; }
+.demo1 .care-difference h3 { font-size:23px; font-weight:700; color:var(--clinic-navy); letter-spacing:-.04em; line-height:1.5; margin-bottom:14px; }
+.demo1 .care-difference p { font-size:16px; line-height:1.9; color:#52616c; word-break:keep-all; }
+.demo1 #section04 .clinical-photo { object-fit:contain; background:#101c26; }
+.demo1 #section05 .item-wrap { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:32px; margin:60px 0 0; }
+.demo1 #section05 .item-wrap .item { width:auto; padding:0; margin:0; }
+.demo1 #section05 .item-wrap .inner { height:100%; }
+.demo1 #section05 .item-wrap figure img.clinical-photo { display:block; width:100%; height:240px; aspect-ratio:auto; object-fit:contain; background:#101c26; }
+.demo1 #section05 .item-wrap figcaption { padding:22px 0; }
+.demo1 #section05 .item-wrap .desc { font-size:16px; padding:22px 0; color:#52616c; }
+.demo1 .clinical-note { max-width:980px; margin:26px auto 0; text-align:center; font-size:13px; line-height:1.8; color:#697b88; word-break:keep-all; }
+.demo1 #section06 .item-wrap { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:28px; margin-top:60px; }
+.demo1 #section06 .item-wrap>.item { display:flex; flex-direction:column; min-height:0; margin:0; border:1px solid #e0e8ed; background:white; }
+.demo1 #section06 .chronic-clinical { width:100%; margin:0; background:#101c26; }
+.demo1 #section06 .chronic-clinical img { display:block; width:100%; height:290px; object-fit:contain; }
+.demo1 #section06 .chronic-clinical figcaption { padding:12px 18px; color:#e2eaf0; font-size:12px; line-height:1.6; background:#1c2d3b; }
+.demo1 #section06 .item-wrap .item .info { width:100%; flex:1; align-items:flex-start; }
+.demo1 #section06 .item-wrap .item .inner { padding:32px; width:100%; box-sizing:border-box; }
+.demo1 #section06 .item-wrap .item .tit { font-size:26px; color:var(--clinic-navy); }
+.demo1 #section06 .item-wrap .item .desc { font-size:18px; margin:12px 0 18px; line-height:1.6; }
+.demo1 #section06 .item-wrap .item .txt { font-size:16px; text-align:left; line-height:1.9; margin-bottom:22px; color:#52616c; }
+.demo1 #section06 .item-wrap .item ul { gap:8px; margin:0; }
+.demo1 #section06 .item-wrap .item ul li { width:auto; padding:0; }
+.demo1 #section06 .item-wrap .item ul li span { height:auto; min-height:36px; padding:7px 14px; font-size:14px; line-height:1.5; border-radius:3px; }
+/* Replace all negative circle margins at every breakpoint. */
+.demo1 #section07 { padding:110px 0; background-attachment:scroll; }
+.demo1 #section07 .mwidth { padding-right:0; }
+.demo1 #section07 .box-wrap { grid-template-columns:minmax(0,.85fr) minmax(0,1.3fr); gap:64px; }
+.demo1 #section07 .circle-wrap { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px; padding:0; margin:0; text-align:left; }
+.demo1 #section07 .circle-wrap .item,
+.demo1 #section07 .circle-wrap .item+.item,
+.demo1 #section07 .circle-wrap .item:nth-child(even),
+.demo1 #section07 .circle-wrap .item:nth-child(n+3) { display:block; width:auto; min-width:0; margin:0; aspect-ratio:auto; border:1px solid #ffffff38; border-radius:4px; background:#ffffff0d; }
+.demo1 #section07 .circle-wrap .item .inner { display:block; width:auto; height:auto; padding:32px; background:none; border-radius:0; }
+.demo1 #section07 .circle-wrap .item .tit { padding:0; margin-bottom:18px; font-size:23px; color:#a8deeb; line-height:1.4; }
+.demo1 #section07 .circle-wrap .item .tit:before { display:none; }
+.demo1 #section07 .circle-wrap .item .desc { font-size:19px; line-height:1.75; color:#fff; }
+.demo1 #section07 .cmn-tit { margin:0; }
+.demo1 .clinic-editorial { padding:120px 0; }
+.demo1 #equipment { background:#f4f7f8; }
+.demo1 .equipment-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:32px; margin:60px 0; }
+.demo1 .equipment-card { display:grid; grid-template-columns:minmax(0,.8fr) minmax(0,1fr); background:#fff; border:1px solid var(--clinic-line); }
+.demo1 .equipment-visual { position:relative; min-width:0; display:flex; align-items:center; justify-content:center; overflow:hidden; background:#213e57; }
+.demo1 .equipment-visual.logiq { background:#3e5c75; }
+.demo1 .equipment-visual img { display:block; width:100%; height:auto; max-height:450px; object-fit:contain; }
+.demo1 .equipment-visual>span { position:absolute; top:18px; left:18px; font-size:10px; color:#d6e4eb; letter-spacing:.12em; }
+.demo1 .equipment-copy { min-width:0; padding:36px 28px; }
+.demo1 .equipment-maker { margin:0 0 12px; color:var(--clinic-teal); font-size:12px; font-weight:700; letter-spacing:.14em; }
+.demo1 .equipment-copy h3 { font-family:GmarketWeb,sans-serif; font-size:29px; font-weight:500; line-height:1.4; color:var(--clinic-navy); margin-bottom:14px; }
+.demo1 .equipment-copy>p:not(.equipment-maker) { font-size:16px; line-height:1.8; color:#52616c; word-break:keep-all; }
+.demo1 .equipment-copy dl { margin:28px 0 0; }
+.demo1 .equipment-copy dl>div { padding:15px 0; border-top:1px solid var(--clinic-line); }
+.demo1 .equipment-copy dt { font-size:15px; color:var(--clinic-navy); font-weight:700; margin-bottom:5px; }
+.demo1 .equipment-copy dd { font-size:14px; line-height:1.8; color:#637582; margin:0; }
+.demo1 .equipment-film { display:grid; grid-template-columns:minmax(0,.7fr) minmax(0,1.4fr); gap:48px; align-items:center; margin:80px 0 0; }
+.demo1 .equipment-film h3 { font-size:30px; color:var(--clinic-navy); font-weight:500; line-height:1.6; letter-spacing:-.04em; margin:14px 0 20px; }
+.demo1 .equipment-film p:not(.equipment-maker) { font-size:16px; line-height:1.8; color:#52616c; }
+.demo1 .equipment-film figure { margin:0; min-width:0; }
+.demo1 .equipment-film video { display:block; width:100%; aspect-ratio:16/9; background:#183b56; border-radius:4px; }
+.demo1 .equipment-film figcaption { margin-top:10px; font-size:12px; color:#6b7f8e; }
+.demo1 #dialysis { background:#eaf2f4; }
+.demo1 .dialysis-layout { display:grid; grid-template-columns:minmax(0,.9fr) minmax(0,1.2fr); gap:72px; align-items:center; }
+.demo1 .dialysis-intro h2 { font-size:clamp(29px,3vw,42px); line-height:1.6; font-weight:400; color:var(--clinic-navy); letter-spacing:-.05em; margin:22px 0; word-break:keep-all; }
+.demo1 .dialysis-intro h2 b { color:var(--clinic-teal); font-weight:500; }
+.demo1 .dialysis-intro>p:not(.equipment-maker) { font-size:17px; line-height:1.9; color:#52616c; }
+.demo1 .clinic-text-link { display:inline-flex; align-items:center; gap:36px; font-size:16px; margin-top:28px; padding:12px 0; border-bottom:1px solid var(--clinic-navy); color:var(--clinic-navy); }
+.demo1 .dialysis-photo { margin:0; min-width:0; }
+.demo1 .dialysis-photo img { display:block; width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:4px; }
+.demo1 .dialysis-photo figcaption { margin-top:10px; font-size:12px; line-height:1.7; color:#617785; }
+.demo1 .dialysis-care-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:36px; margin-top:70px; }
+.demo1 .dialysis-care-grid article { border-top:1px solid #c3d7df; padding:28px 0 0; }
+.demo1 .dialysis-care-grid img { display:block; width:72px; height:72px; margin-bottom:20px; }
+.demo1 .dialysis-care-grid h3 { font-size:23px; line-height:1.5; font-weight:700; color:var(--clinic-navy); margin-bottom:14px; }
+.demo1 .dialysis-care-grid p { font-size:16px; line-height:1.9; color:#52616c; word-break:keep-all; }
+.demo1 .dialysis-visit { padding:28px 32px; margin-top:45px; border-left:3px solid var(--clinic-teal); background:#ffffffb3; }
+.demo1 .dialysis-visit h3 { font-size:18px; font-weight:700; color:var(--clinic-navy); margin-bottom:12px; }
+.demo1 .dialysis-visit p { font-size:16px; line-height:1.8; }
+.demo1 .dialysis-visit span { display:block; margin-top:10px; font-size:14px; line-height:1.7; color:#617785; }
+.clinical-credits { background:#f4f7f8; padding:28px max(24px,calc((100% - 1200px)/2)); font-size:13px; line-height:1.8; color:#52616c; }
+.clinical-credits summary { cursor:pointer; font-weight:500; color:#25465d; }
+.clinical-credits p { margin:16px 0; }
+.clinical-credits ul { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px 30px; }
+.clinical-credits a { text-decoration:underline; text-underline-offset:3px; }
+@media(min-width:1280px) { .demo1 #gnb>ul { display:flex; justify-content:center; flex-wrap:wrap; } .demo1 #gnb>ul>li { flex:0 1 auto; width:auto; } .demo1 #gnb>ul>li>a { padding-inline:16px; font-size:15px; white-space:nowrap; } }
+@media(min-width:769px) and (max-width:1279px) {
+ .demo1 .clinic-editorial { padding:90px 0; }
+ .demo1 .equipment-card { grid-template-columns:1fr; }
+ .demo1 .equipment-visual { height:300px; }
+ .demo1 .equipment-visual img { height:100%; width:auto; }
+ .demo1 .equipment-copy { padding:30px; }
+ .demo1 .dialysis-layout { gap:32px; }
+ .demo1 .dialysis-intro>p br { display:none; }
+ .demo1 .dialysis-care-grid { gap:24px; }
+ .demo1 #section07 .box-wrap { grid-template-columns:1fr; gap:40px; }
+ .demo1 #section07 .circle-wrap { grid-template-columns:repeat(4,minmax(0,1fr)); gap:16px; }
+ .demo1 #section07 .circle-wrap .item .inner { padding:24px 18px; }
+ .demo1 #section07 .circle-wrap .item .desc { font-size:16px; }
+ .demo1 #section05 .item-wrap { grid-template-columns:repeat(2,minmax(0,1fr)); }
+ .demo1 #section04 .ico-wrap { gap:16px; }
+ .demo1 #section04 .ico-wrap figcaption { font-size:14px; }
+ .demo1 #section06 .item-wrap .item .inner { padding:26px; }
+ .demo1 .care-difference { gap:24px; }
+ .demo1 .care-difference h3 { font-size:21px; }
+}
+@media(max-width:768px) {
+ .demo1 .clinic-editorial { padding:72px 0; }
+ .demo1 .care-difference,.demo1 .equipment-grid,.demo1 .equipment-film,.demo1 .dialysis-layout,.demo1 .dialysis-care-grid,.demo1 #section06 .item-wrap { grid-template-columns:1fr; gap:24px; }
+ .demo1 .care-difference { margin-top:32px; gap:0; }
+ .demo1 .care-difference article { padding:24px 0; }
+ .demo1 .feature-number { margin-bottom:12px; }
+ .demo1 .care-difference h3 { font-size:22px; }
+ .demo1 .endoscopy-record { margin-top:36px; padding:24px 10px 20px; }
+ .demo1 .endoscopy-record span { font-size:14px; }
+ .demo1 .endoscopy-record small { font-size:15px; margin-left:4px; }
+ .demo1 #section04 .ico-wrap { grid-template-columns:repeat(2,minmax(0,1fr)); gap:28px 18px; margin:35px 0 50px; }
+ .demo1 #section04 .ico-wrap li:last-child { grid-column:1/-1; }
+ .demo1 #section04 .ico-wrap img.medical-icon { width:78px; height:78px; }
+ .demo1 #section04 .ico-wrap figcaption { font-size:14px; }
+ .demo1 #section05 .item-wrap { grid-template-columns:1fr; gap:26px; margin-top:36px; }
+ .demo1 #section05 .item-wrap figure img.clinical-photo { height:260px; }
+ .demo1 #section05 .item-wrap .desc { padding:18px 0 0; }
+ .demo1 #section06 .item-wrap { margin-top:36px; }
+ .demo1 #section06 .chronic-clinical img { height:260px; }
+ .demo1 #section06 .item-wrap .item .inner { padding:26px 22px; }
+ .demo1 #section06 .item-wrap .item .tit { font-size:25px; }
+ .demo1 #section07 { padding:72px 0; }
+ .demo1 #section07 .box-wrap { grid-template-columns:1fr; gap:32px; }
+ .demo1 #section07 .circle-wrap { grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }
+ .demo1 #section07 .circle-wrap .item .inner { padding:24px 16px; }
+ .demo1 #section07 .circle-wrap .item .tit { font-size:20px; margin-bottom:12px; }
+ .demo1 #section07 .circle-wrap .item .desc { font-size:15px; line-height:1.8; }
+ .demo1 .equipment-grid { margin:36px 0; }
+ .demo1 .equipment-card { grid-template-columns:1fr; }
+ .demo1 .equipment-visual { height:300px; }
+ .demo1 .equipment-visual img { width:auto; height:100%; }
+ .demo1 .equipment-copy { padding:28px 24px; }
+ .demo1 .equipment-copy h3 { font-size:28px; }
+ .demo1 .equipment-film { margin-top:48px; }
+ .demo1 .equipment-film h3 { font-size:28px; }
+ .demo1 .dialysis-layout { gap:32px; }
+ .demo1 .dialysis-intro h2 { font-size:29px; }
+ .demo1 .dialysis-intro>p { font-size:16px; }
+ .demo1 .dialysis-intro>p br { display:none; }
+ .demo1 .dialysis-care-grid { margin-top:40px; }
+ .demo1 .dialysis-care-grid article { display:grid; grid-template-columns:56px minmax(0,1fr); gap:0 20px; padding-top:24px; }
+ .demo1 .dialysis-care-grid img { width:56px; height:56px; grid-row:1/3; }
+ .demo1 .dialysis-care-grid h3 { font-size:21px; margin-bottom:10px; }
+ .demo1 .dialysis-care-grid p { font-size:15px; }
+ .demo1 .dialysis-visit { padding:24px 20px; margin-top:32px; }
+ .clinical-credits ul { grid-template-columns:1fr; }
+}
+@media(max-width:359px) { .demo1 #section07 .circle-wrap { grid-template-columns:1fr; } }
+/* Reserve a real gutter for the desktop quick bar, rather than covering content. */
+@media(min-width:1280px) {
+ .demo1 .mwidth,.demo1 #section02 article.clinic-director-profile>.mwidth { width:calc(100% - 240px); max-width:1280px; padding-inline:0; }
+ .demo1 #header .header-top .gnb-wrap #gnb>ul { flex-wrap:nowrap; }
+ .demo1 #header .header-top .gnb-wrap #gnb>ul>li>a { padding-inline:13px; font-size:15px; white-space:nowrap; }
+}
+@media(max-width:1279px) { .demo1 .mwidth { padding-inline:28px; } .demo1 #section07 .mwidth { padding-right:28px; } }
+@media(max-width:768px) { .demo1 .mwidth { padding-inline:24px; } .demo1 #section07 .mwidth { padding-right:24px; } }
+.reference-skip:not(:focus) { visibility:hidden; }
+/* A dedicated reversed logo preserves the brand on the dark footer. */
+.demo1 #footer h2 img { width:min(360px,calc(100% - 64px)); height:auto; max-height:none; filter:none; }
+.demo1 #footer address { max-width:1000px; margin-inline:auto; padding:0 28px 40px; box-sizing:border-box; color:#fff; text-transform:none; white-space:normal; overflow-wrap:anywhere; font-size:14px; font-weight:400; line-height:1.9; }
+.demo1 #footer address span,.demo1 #footer address a { color:#fff; }
+@media(max-width:768px) { .demo1 #footer h2 { min-height:104px; height:auto; padding-block:24px; box-sizing:border-box; } .demo1 #footer h2 img { width:min(300px,calc(100% - 64px)); } .demo1 #footer address { padding:0 24px 32px; font-size:13px; } }
+.demo1 #section06 .asthma-reference { background:#edf0ef; }
+.demo1 #section06 .asthma-reference img { object-fit:cover; object-position:center 55%; }
