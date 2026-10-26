@@ -8,7 +8,7 @@ import "./director-profile.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://seoul-bareun.vercel.app"),
-  title: "서울 바른내과 데모버전",
+  title: "서울 바른내과",
   description: "서울바른내과 홈페이지 데모입니다. 진료 안내와 병원 공간을 미리 둘러보세요.",
   openGraph: {
     type: "website",
