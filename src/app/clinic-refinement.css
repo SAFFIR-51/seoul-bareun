@@ -186,3 +186,8 @@
 @media(max-width:768px) { .demo1 #footer h2 { min-height:104px; height:auto; padding-block:24px; box-sizing:border-box; } .demo1 #footer h2 img { width:min(300px,calc(100% - 64px)); } .demo1 #footer address { padding:0 24px 32px; font-size:13px; } }
 .demo1 #section06 .asthma-reference { background:#edf0ef; }
 .demo1 #section06 .asthma-reference img { object-fit:cover; object-position:center 55%; }
+/* Keep the exam tabs in normal flow, clear of the recovery description. */
+.demo1 #section04 .cmn-tabmenu { top:0; }
+@media(max-width:768px) {
+ .demo1 #section04 .cmn-cont-wrap { padding-top:32px; }
+}
