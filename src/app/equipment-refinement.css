@@ -1,0 +1,54 @@
+/* Equipment follows the clinic's image-first cards and readable body type. */
+.demo1 #equipment { padding:88px 0; background:#fff; font-family:NotoSansWeb,sans-serif; }
+.demo1 #equipment .cmn-tit .txt-top { color:#0578b2; }
+.demo1 #equipment .cmn-tit .desc { font-family:NotoSansWeb,sans-serif; font-size:16px; font-weight:400; line-height:1.8; letter-spacing:0; word-break:keep-all; }
+.demo1 #equipment .equipment-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; margin:48px 0 0; }
+.demo1 #equipment .equipment-card { display:flex; flex-direction:column; min-width:0; border:0; background:none; }
+.demo1 #equipment .equipment-visual { height:360px; padding:24px; background:#25465d; }
+.demo1 #equipment .equipment-visual.logiq { background:#3e5c75; }
+.demo1 #equipment .equipment-visual img { width:auto; max-width:100%; height:100%; max-height:none; object-fit:contain; }
+.demo1 #equipment .equipment-copy { flex:1; padding:28px; }
+.demo1 #equipment .equipment-maker { margin:0 0 8px; color:#52616c; font-family:GmarketWeb,sans-serif; font-size:12px; font-weight:400; font-synthesis:none; line-height:1.6; letter-spacing:.05em; }
+.demo1 #equipment .equipment-copy h3 { margin:0 0 20px; color:#0578b2; font-family:GmarketWeb,sans-serif; font-size:24px; font-weight:700; font-synthesis:none; line-height:1.5; letter-spacing:0; }
+.demo1 #equipment .equipment-copy>p:not(.equipment-maker) { margin:0; color:#3f4a53; font-family:NotoSansWeb,sans-serif; font-size:16px; font-weight:400; line-height:1.8; letter-spacing:0; word-break:keep-all; overflow-wrap:anywhere; }
+.demo1 #equipment .equipment-copy dl { margin:24px 0 0; }
+.demo1 #equipment .equipment-copy dl>div { margin:0; padding:20px 0; border-top:1px solid #dce1e5; }
+.demo1 #equipment .equipment-copy dl>div:last-child { padding-bottom:0; }
+.demo1 #equipment .equipment-copy dt { margin:0 0 8px; color:#25465d; font-family:NotoSansWeb,sans-serif; font-size:17px; font-weight:500; font-synthesis:none; line-height:1.6; letter-spacing:0; }
+.demo1 #equipment .equipment-copy dd { margin:0; color:#3f4a53; font-family:NotoSansWeb,sans-serif; font-size:16px; font-weight:400; line-height:1.8; letter-spacing:0; word-break:keep-all; overflow-wrap:anywhere; }
+.demo1 #equipment .equipment-film { display:grid; grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr); align-items:center; gap:40px; margin:48px 0 0; padding:28px; border:0; border-top:1px solid #0578b2; background:#f8f8f8; }
+.demo1 #equipment .equipment-film h3 { margin:0 0 20px; color:#0578b2; font-family:GmarketWeb,sans-serif; font-size:24px; font-weight:700; font-synthesis:none; line-height:1.6; letter-spacing:0; word-break:keep-all; }
+.demo1 #equipment .equipment-film p:not(.equipment-maker) { margin:0; color:#3f4a53; font-family:NotoSansWeb,sans-serif; font-size:16px; font-weight:400; line-height:1.8; letter-spacing:0; word-break:keep-all; }
+.demo1 #equipment .equipment-film video { border-radius:0; }
+.demo1 #equipment .equipment-film figcaption { margin-top:12px; color:#52616c; font-family:NotoSansWeb,sans-serif; font-size:13px; font-weight:400; line-height:1.6; letter-spacing:0; }
+.demo1 #equipment .equipment-video-preview { position:relative; }
+.demo1 #equipment .equipment-video-open { display:none; }
+.equipment-video-dialog { position:fixed; inset:0; width:100%; max-width:none; height:100vh; height:100dvh; max-height:none; margin:0; padding:16px; padding:calc(16px + env(safe-area-inset-top,0px)) calc(16px + env(safe-area-inset-right,0px)) calc(16px + env(safe-area-inset-bottom,0px)) calc(16px + env(safe-area-inset-left,0px)); border:0; background:#101c26; color:#fff; box-sizing:border-box; overscroll-behavior:contain; }
+.equipment-video-dialog[open] { display:grid; grid-template-rows:auto minmax(0,1fr); gap:16px; }
+.equipment-video-dialog::backdrop { background:#101c26; }
+.equipment-video-dialog-header { display:flex; align-items:center; justify-content:space-between; gap:16px; }
+.equipment-video-dialog-header h2 { margin:0; font-family:NotoSansWeb,sans-serif; font-size:16px; font-weight:500; line-height:1.5; }
+.equipment-video-dialog-header button { display:flex; align-items:center; justify-content:center; flex:none; width:44px; height:44px; padding:10px; border:1px solid #ffffff70; border-radius:50%; background:transparent; color:#fff; touch-action:manipulation; }
+.equipment-video-dialog-header svg { width:24px; height:24px; }
+.equipment-video-dialog-header button:focus-visible { outline:2px solid #fff; outline-offset:4px; }
+.equipment-video-dialog-header button:active { background:#ffffff20; }
+.equipment-video-dialog-slot { display:flex; align-items:center; justify-content:center; min-width:0; min-height:0; }
+.equipment-video-dialog-slot video { display:block; width:100%; max-width:100%; max-height:100%; object-fit:contain; background:#000; }
+@media(min-width:769px) and (max-width:1279px) {
+ .demo1 #equipment { padding:72px 0; }
+ .demo1 #equipment .equipment-copy { padding:24px; }
+ .demo1 #equipment .equipment-visual { height:320px; }
+ .demo1 #equipment .equipment-film { gap:28px; padding:24px; }
+}
+@media(max-width:768px) {
+ .demo1 #equipment { padding:56px 0; }
+ .demo1 #equipment .equipment-grid { grid-template-columns:minmax(0,1fr); gap:28px; margin-top:32px; }
+ .demo1 #equipment .equipment-visual { height:320px; }
+ .demo1 #equipment .equipment-copy { padding:24px; }
+ .demo1 #equipment .equipment-copy h3 { font-size:22px; }
+ .demo1 #equipment .equipment-film { grid-template-columns:minmax(0,1fr); gap:24px; margin-top:32px; padding:24px; }
+ .demo1 #equipment .equipment-film h3 { font-size:22px; }
+ .demo1 #equipment .equipment-video-ready .equipment-video-open { position:absolute; inset:0; display:block; width:100%; padding:0; border:0; background:transparent; touch-action:manipulation; }
+ .demo1 #equipment .equipment-video-open:active { background:#101c2615; }
+ .demo1 #equipment .equipment-video-open:focus-visible { outline:2px solid #0578b2; outline-offset:4px; }
+}

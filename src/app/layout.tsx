@@ -6,6 +6,12 @@ import "./visit-information.css";
 import "./header-brand.css";
 import "./director-profile.css";
 import "./clinic-refinement.css";
+import "./endoscopy-refinement.css";
+import "./ultrasound-refinement.css";
+import "./dialysis-refinement.css";
+import "./equipment-refinement.css";
+import "./vaccination-refinement.css";
+import "./mobile-polish.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://seoul-bareun.vercel.app"),

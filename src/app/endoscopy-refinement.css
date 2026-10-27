@@ -1,0 +1,130 @@
+/* Endoscopy follows the clinic's plain type, flat surfaces and blue line icons. */
+.demo1 #section04 { font-family:NotoSansWeb,sans-serif; }
+.demo1 #section04 .cmn-tit .title { font-family:GmarketWeb,sans-serif; font-size:40px; font-weight:300; line-height:1.5; letter-spacing:-.02em; }
+.demo1 #section04 .endoscopy-heading-lead,
+.demo1 #section04 .cmn-tit .title>b { display:block; vertical-align:baseline; }
+.demo1 #section04 .cmn-tit .title>b { font-weight:500; }
+.demo1 #section04 .endoscopy-word { white-space:nowrap; vertical-align:baseline; }
+.demo1 #section04 .cmn-tit .desc { max-width:720px; margin-inline:auto; font-size:17px; font-weight:400; line-height:1.8; letter-spacing:0; }
+
+.demo1 #section04 .endoscopy-record { max-width:850px; gap:0; margin:48px auto 40px; padding:28px 24px; background:#f0f6f8; border-radius:0; }
+.demo1 #section04 .endoscopy-record>div { min-width:0; padding-inline:12px; }
+.demo1 #section04 .endoscopy-record>div+div { border-left:1px solid #dce1e5; }
+.demo1 #section04 .endoscopy-record span { font-size:16px; line-height:1.6; color:#486174; }
+.demo1 #section04 .endoscopy-record strong { display:flex; align-items:baseline; justify-content:center; gap:6px; margin-top:12px; font-family:NotoSansWeb,sans-serif; font-size:56px; font-weight:700; font-synthesis:none; font-variant-numeric:tabular-nums; line-height:1.2; letter-spacing:-.025em; white-space:nowrap; }
+.demo1 #section04 .endoscopy-record small { margin:0; font-family:inherit; font-size:16px; font-weight:400; line-height:1; vertical-align:baseline; }
+.demo1 #section04 .endoscopy-record p { margin:20px 0 0; font-size:13px; line-height:1.7; color:#52616c; }
+
+.demo1 #section04 .care-difference { gap:24px; margin:40px 0 0; }
+.demo1 #section04 .care-difference article { min-width:0; }
+.demo1 #section04 .care-difference h3 { margin:0 0 16px; font-family:NotoSansWeb,sans-serif; font-size:21px; font-weight:500; line-height:1.55; letter-spacing:0; }
+.demo1 #section04 .care-difference p { font-size:16px; font-weight:400; line-height:1.8; letter-spacing:0; color:#3f4a53; }
+
+.demo1 #section04 .endoscopy-guidance { display:flex; gap:0; margin:48px 0 112px; text-align:center; scroll-margin-top:80px; }
+.demo1 #section04 .endoscopy-guidance>li { flex:1 1 0; min-width:0; width:auto; padding:8px 16px 12px; }
+.demo1 #section04 .endoscopy-guidance figure { display:flex; flex-direction:column; align-items:center; gap:26px; margin:0; }
+.demo1 #section04 .endoscopy-guidance img.endoscopy-guidance-icon { display:block; flex:none; width:64px; height:64px; margin:0; object-fit:contain; }
+.demo1 #section04 .endoscopy-guidance figcaption { margin:0; font-size:16px; font-weight:400; line-height:1.7; letter-spacing:-.025em; }
+.demo1 #section04 .endoscopy-guidance figcaption strong { display:block; margin:0 0 8px; font:inherit; font-size:22px; line-height:1.5; letter-spacing:inherit; }
+.demo1 #section04 .endoscopy-guidance-copy--mobile { display:none; }
+
+.demo1 #section04 .bg { padding-top:32px; }
+.demo1 #section04 .cmn-tabmenu { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:8px; margin:0; top:0; scroll-margin-top:80px; }
+.demo1 #section04 .cmn-tabmenu .item { display:flex; min-width:0; max-width:none; padding:0; }
+.demo1 #section04 .cmn-tabmenu .item a { box-sizing:border-box; width:100%; height:auto; min-height:48px; padding:12px 10px; border-color:#b8cbd8; font-family:NotoSansWeb,sans-serif; font-size:16px; font-weight:400; font-synthesis:none; line-height:1.5; letter-spacing:0; text-align:center; transition:background-color 180ms ease,color 180ms ease,border-color 180ms ease; }
+.demo1 #section04 .cmn-tabmenu .item a.selected { border-color:#0578b2; background:#0578b2; font-weight:500; }
+.demo1 #section04 .cmn-tabmenu .item a:active { transform:none; }
+.demo1 #section04 .cmn-cont-wrap { padding:32px 0 40px; }
+.demo1 #section04 .cont .box-wrap { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); align-items:start; background:#fff; }
+.demo1 #section04 .cont .box-wrap .img { width:auto; min-width:0; }
+.demo1 #section04 .cont .box-wrap .img img { display:block; width:100%; height:auto; max-height:440px; aspect-ratio:4/3; object-fit:cover; }
+.demo1 #section04 .cont .box-wrap .img img.clinical-photo { object-fit:contain; background:#101c26; }
+.demo1 #section04 .cont .box-wrap .info { width:auto; min-width:0; padding:32px; border-top:1px solid #0578b2; }
+.demo1 #section04 .cont .box-wrap .info .tit { margin:0 0 20px; font-family:GmarketWeb,sans-serif; font-size:24px; font-weight:500; font-synthesis:none; line-height:1.5; letter-spacing:-.02em; }
+.demo1 #section04 .cont .box-wrap .info .desc { margin:0 0 14px; padding-bottom:14px; border-bottom:1px solid #dce1e5; font-family:NotoSansWeb,sans-serif; font-size:16px; font-weight:400; line-height:1.8; letter-spacing:0; color:#3f4a53; }
+.demo1 #section04 .cont .box-wrap .info .txt { font-size:16px; font-weight:400; line-height:1.8; letter-spacing:0; color:#3f4a53; }
+.demo1 #section04 .info .txt p { margin:0; }
+.demo1 #section04 .info .txt p+p { margin-top:14px; padding-top:14px; border-top:1px solid #dce1e5; }
+.demo1 #section04 .cont .box-wrap .info .tip-wrap { display:block; margin:14px 0 0; padding:14px 0 0; border-top:1px solid #dce1e5; border-radius:0; background:none; }
+.demo1 #section04 .cont .box-wrap .info .tip-wrap .tip-tit { display:block; width:auto; height:auto; margin:0 0 8px; border-radius:0; background:none; font-family:NotoSansWeb,sans-serif; font-size:16px; font-weight:500; line-height:1.5; letter-spacing:0; text-align:left; }
+.demo1 #section04 .cont .box-wrap .info .tip-wrap .tip-txt { font-size:16px; font-weight:400; line-height:1.8; letter-spacing:0; }
+.demo1 #section04 .clinical-note { max-width:none; margin-top:0; padding-bottom:32px; font-size:13px; line-height:1.7; text-align:left; }
+
+/* Match the checkup program tabs and straddle the background boundary. */
+@media(min-width:1280px) {
+ .demo1 #section04 .bg { padding-top:0; }
+ .demo1 #section04 .cmn-tabmenu { display:flex; flex-wrap:nowrap; justify-content:center; gap:0; width:100%; max-width:none; margin:0; top:-52px; }
+ .demo1 #section04 .cmn-tabmenu .item { flex:1 1 20%; max-width:none; padding:4px; }
+ .demo1 #section04 .cmn-tabmenu .item a { display:flex; align-items:center; justify-content:center; height:97px; min-height:97px; padding:0; border-color:#0578b2; font-size:2.2rem; font-weight:500; }
+}
+@media(min-width:769px) and (max-width:1279px) {
+ .demo1 #section04 .endoscopy-guidance { margin-bottom:72px; }
+ .demo1 #section04 .cmn-tit .title { font-size:32px; }
+ .demo1 #section04 .endoscopy-record strong { font-size:44px; }
+ .demo1 #section04 .care-difference { gap:16px; }
+ .demo1 #section04 .care-difference article { padding:24px; }
+ .demo1 #section04 .care-difference h3 { font-size:20px; }
+ .demo1 #section04 .endoscopy-guidance>li { padding-inline:10px; }
+ .demo1 #section04 .endoscopy-guidance figcaption { font-size:15px; }
+ .demo1 #section04 .endoscopy-guidance figcaption strong { margin-bottom:6px; font-size:18px; }
+}
+@media(max-width:1000px) {
+ .demo1 #section04 .care-difference { grid-template-columns:minmax(0,1fr); }
+ .demo1 #section04 .cont .box-wrap { grid-template-columns:minmax(0,1fr); }
+}
+@media(max-width:768px) {
+ .demo1 #section04 .cmn-tit .title { font-size:26px; }
+ .demo1 #section04 .cmn-tit .desc { padding-top:20px; font-size:16px; }
+ .demo1 #section04 .endoscopy-record { margin:32px auto; padding:24px 16px; }
+ .demo1 #section04 .endoscopy-record>div { padding-inline:6px; }
+ .demo1 #section04 .endoscopy-record span { font-size:14px; }
+ .demo1 #section04 .endoscopy-record strong { gap:4px; font-size:38px; }
+ .demo1 #section04 .endoscopy-record small { font-size:14px; }
+ .demo1 #section04 .endoscopy-record p { margin-top:18px; }
+ .demo1 #section04 .care-difference { margin-top:32px; gap:20px; }
+ .demo1 #section04 .care-difference article { padding:24px; }
+ .demo1 #section04 .care-difference h3 { font-size:18px; }
+ .demo1 #section04 .endoscopy-guidance { flex-wrap:wrap; justify-content:center; gap:28px 0; margin:40px 0 72px; }
+ .demo1 #section04 .endoscopy-guidance>li { flex:0 0 33.333333%; padding:4px 0 8px; border-right:0; }
+ .demo1 #section04 .endoscopy-guidance>li:last-child { grid-column:auto; }
+ .demo1 #section04 .endoscopy-guidance>li:not(:nth-child(3)):not(:last-child) { border-right:1px solid #eee; }
+ .demo1 #section04 .endoscopy-guidance figure { gap:14px; }
+ .demo1 #section04 .endoscopy-guidance img.endoscopy-guidance-icon { width:40px; height:40px; }
+ .demo1 #section04 .endoscopy-guidance figcaption { width:100%; min-width:0; font-size:14px; line-height:1.65; }
+ .demo1 #section04 .endoscopy-guidance-copy--desktop { display:none; }
+ .demo1 #section04 .endoscopy-guidance-copy--mobile,.demo1 #section04 .endoscopy-guidance-line { display:block; }
+ .demo1 #section04 .endoscopy-guidance-line { white-space:nowrap; }
+ .demo1 #section04 .bg { padding-top:0; }
+ .demo1 #section04 .cmn-tabmenu { grid-template-columns:repeat(2,minmax(0,1fr)); top:-23px; }
+ .demo1 #section04 .cmn-tabmenu .item a { display:flex; align-items:center; justify-content:center; height:46px; min-height:46px; padding:0 5px; font-size:16px; line-height:1.4; }
+ .demo1 #section04 .cmn-tabmenu .item:last-child { grid-column:auto; }
+ .demo1 #section04 .cmn-cont-wrap { padding:24px 0 28px; }
+ .demo1 #section04 .cont .box-wrap .img img { max-height:320px; }
+ .demo1 #section04 .cont .box-wrap .info { padding:24px; }
+ .demo1 #section04 .cont .box-wrap .info .tit { font-size:22px; }
+ .demo1 #section04 .cont .box-wrap .info .desc { font-size:16px; }
+ .demo1 #section04 .clinical-note { padding-bottom:24px; }
+}
+@media(max-width:389px) {
+ .demo1 #section04 .cmn-tit .title { font-size:24px; }
+ .demo1 #section04 .endoscopy-record strong { font-size:32px; }
+ .demo1 #section04 .endoscopy-guidance figcaption { font-size:13px; }
+}
+@media(max-width:359px) {
+ .demo1 #section04 .cmn-tit .title { font-size:22px; }
+ .demo1 #section04 .endoscopy-record strong { font-size:26px; }
+ .demo1 #section04 .endoscopy-guidance figcaption { font-size:12px; }
+ .demo1 #section04 .cmn-tabmenu .item a { padding-inline:4px; font-size:15px; }
+}
+
+/* Real care photography replaces graphic lesion close-ups. */
+.demo1 #section04 .cont .box-wrap .img img.care-photo { object-fit:cover; background:#edf3f6; }
+.demo1 #section06 .chronic-clinical.care-reference { background:#edf3f6; }
+.demo1 #section06 .chronic-clinical.care-reference img { object-fit:cover; object-position:center 58%; }
+.demo1 #section06 .chronic-clinical.care-reference figcaption { color:#52616c; background:#edf3f6; font-family:NotoSansWeb,sans-serif; font-weight:400; }
+
+/* Clinical photography fills the card. Source credits live in the footer. */
+.demo1 #section04 .cont .box-wrap .clinical-reference-frame { margin:0; padding:0; background:#f0f4f6; }
+.demo1 #section04 .clinical-image-viewport { position:relative; width:100%; aspect-ratio:4/3; overflow:hidden; }
+.demo1 #section04 .cont .box-wrap .img img.clinical-reference-photo { display:block; width:100%; max-width:none; height:100%; max-height:none; aspect-ratio:auto; object-fit:cover; background:transparent; }
+.demo1 #section04 .cont .box-wrap .img img.clinical-reference-photo--small-polyp { position:absolute; width:198%; height:198%; left:-77%; top:-47%; }

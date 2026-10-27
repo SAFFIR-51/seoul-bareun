@@ -1,38 +1,5 @@
 [
   {
-    "id": "gastric-ulcer",
-    "path": "/images/clinical/gastric-ulcer.webp",
-    "label": "위궤양 내시경 소견",
-    "title": "Gastric ulcer 2.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Gastric_ulcer_2.jpg",
-    "author": "Samir at en.wikipedia",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-    "description": "Endoscopic picture of gastric ulcer with visible vessel.  Reproduced with permission of patient. -- <a href=\"https://en.wikipedia.org/wiki/User:Samir\" class=\"extiw\" title=\"en:User:Samir\">Samir</a> 00:53, 5 May 2006 (UTC)"
-  },
-  {
-    "id": "colon-polyp",
-    "path": "/images/clinical/colon-polyp.webp",
-    "label": "대장 용종 내시경 소견",
-    "title": "Polyp.jpeg",
-    "source": "https://commons.wikimedia.org/wiki/File:Polyp.jpeg",
-    "author": "Original uploader was Rsabbatini at en.wikipedia\n\nLater version(s) were uploaded by Kd4ttc at en.wikipedia.",
-    "license": "CC BY 2.5",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
-    "description": "Colon polyp on a short stalk.\n<pre>Attribute to Stephen Holland, M.D., Naperville Gastroenterology, Naperville, IL, USA.\n</pre>\n<a href=\"https://en.wikipedia.org/wiki/Category:Endoscopic_images\" class=\"extiw\" title=\"en:Category:Endoscopic images\">en:Category:Endoscopic images</a>"
-  },
-  {
-    "id": "diabetes-retina",
-    "path": "/images/clinical/diabetes-retina.webp",
-    "label": "당뇨병성 망막병증 소견",
-    "title": "Fundus retinopathy EDA03.JPG",
-    "source": "https://commons.wikimedia.org/wiki/File:Fundus_retinopathy_EDA03.JPG",
-    "author": "Wikimedia Commons 원본 파일 참조",
-    "license": "Public domain",
-    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
-    "description": "<p>In background retinopathy  \t\n</p><p>Description: In background retinopathy, a slight deterioration in the small blood vessels of the retina, portions of the vessels may swell and leak fluid into the surrounding retinal tissue.\n</p><p>Credit: National Eye Institute, National Institutes of Health\n</p>\nRef#: EDA03"
-  },
-  {
     "id": "pneumonia",
     "path": "/images/clinical/pneumonia.webp",
     "label": "폐렴 흉부 X선 소견",
@@ -98,15 +65,15 @@
     "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
   },
   {
-    "id": "dialysis",
-    "path": "/images/clinical/dialysis.webp",
-    "label": "혈액투석실 참고 사진",
-    "title": "Bed side Dialysis.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Bed_side_Dialysis.jpg",
-    "author": "Irvin calicut at Malayalam Wikipedia",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "description": "Dialysis machine with bed side setup"
+    "id": "dialysis-center-wide",
+    "path": "/images/clinical-care/dialysis-center-wide.webp",
+    "label": "혈액투석 장비와 치료 공간 참고 사진",
+    "title": "Equipamentos do Centro de Hemodialise (2019.08.26)",
+    "source": "https://commons.wikimedia.org/wiki/File:(2019.08.26)_Equipamentos_do_Centro_de_Hemodialise_(48625091466).jpg",
+    "author": "Felipe Barros/ExLibris/PMI · Prefeitura de Itapevi",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "description": "Actual landscape photograph of the Itapevi dialysis center, August 26, 2019. Resized to 1920px and converted to WebP; cropped in CSS. External reference, not the clinic facility or a claim about equipment owned by the clinic."
   },
   {
     "id": "prostate",
@@ -129,5 +96,71 @@
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
     "description": "An asthma inhaler. Credit: NIAID; resized for web display."
+  },
+  {
+    "id": "polypectomy-snare",
+    "path": "/images/clinical-care/polypectomy-snare.webp",
+    "label": "용종절제술용 내시경 스네어 기구",
+    "title": "Endoscopy snare.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Endoscopy_snare.jpg",
+    "author": "Gilo1969",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "description": "Actual photograph of an endoscopy snare used for upper GI and colonic polypectomy. Resized and converted to WebP; CSS may crop the displayed photo. The converted image retains CC BY-SA 3.0. External reference instrument, not a photograph taken at this clinic."
+  },
+  {
+    "id": "recovery-room",
+    "path": "/images/clinical-care/recovery-room.webp",
+    "label": "병실과 침대 참고 사진",
+    "title": "Empty hospital bed inside room",
+    "source": "https://unsplash.com/photos/empty-hospital-bed-inside-room-zbpgmGe27p8",
+    "author": "Adhy Savala",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license",
+    "description": "Actual external hospital ward photograph; not the clinic recovery room. Resized and converted to WebP; CSS may crop the displayed image."
+  },
+  {
+    "id": "medical-records",
+    "path": "/images/clinical-care/medical-records.webp",
+    "label": "진료 기록 확인 참고 사진",
+    "title": "Hands of Doctor Holding Notepad and Pen",
+    "source": "https://www.pexels.com/photo/hands-of-doctor-holding-notepad-and-pen-7578802/",
+    "author": "cottonbro studio",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "description": "Actual photograph of hands reviewing records. Resized and converted to WebP; CSS may crop the displayed image."
+  },
+  {
+    "id": "blood-pressure-care",
+    "path": "/images/clinical-care/blood-pressure-care.webp",
+    "label": "혈압 측정과 건강관리 참고 사진",
+    "title": "A Doctor Checking a Patient’s Blood Pressure",
+    "source": "https://www.pexels.com/photo/a-doctor-checking-a-patient-s-blood-pressure-5215000/",
+    "author": "Antoni Shkraba",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "description": "Actual blood pressure measurement scene; no disease diagnosis of the depicted person is implied. Resized and converted to WebP; CSS may crop the displayed image."
+  },
+  {
+    "id": "stomach-reference",
+    "path": "/images/clinical-care/stomach-reference.webp",
+    "label": "실제 위내시경 참고 영상",
+    "title": "Stomach endoscopy 1.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Stomach_endoscopy_1.jpg",
+    "author": "Ignis",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "description": "Endoscopic view of a normal stomach (pylorus). Resized and converted to WebP; CSS may slightly crop the image to fill the card. Not a clinic patient result."
+  },
+  {
+    "id": "colon-small-polyp",
+    "path": "/images/clinical-care/colon-small-polyp.webp",
+    "label": "작은 대장 용종의 실제 내시경 참고 영상",
+    "title": "MaElenaAM 45.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:MaElenaAM_45.jpg",
+    "author": "Dr. Pablo Navarro (Drpnavarro)",
+    "license": "Public domain",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "description": "Actual endoscopic image showing a small colon polyp and open biopsy forceps before sampling. Converted to WebP; CSS crops out the surrounding screen annotations. No lesion retouching or AI processing. Not a clinic patient result."
   }
 ]

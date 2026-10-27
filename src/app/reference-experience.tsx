@@ -5,6 +5,8 @@ import { useEffect, useMemo, useRef, useState } from "react";
 export default function ReferenceExperience({ markup }: { markup: string }) {
   const rootRef = useRef<HTMLDivElement>(null);
   const dialogRef = useRef<HTMLDialogElement>(null);
+  const equipmentDialogRef = useRef<HTMLDialogElement>(null);
+  const equipmentVideoSlotRef = useRef<HTMLDivElement>(null);
   const returnFocus = useRef<HTMLElement | null>(null);
   const [dialog, setDialog] = useState<"contact" | "fees" | "kakao" | null>(null);
   const html = useMemo(() => ({ __html: markup }), [markup]);
@@ -131,7 +133,12 @@ export default function ReferenceExperience({ markup }: { markup: string }) {
     }
     function handleClick(event: MouseEvent) {
       const target = event.target as Element;
-      if (target.closest("[data-kakao-pending]")) { event.preventDefault(); setDialog("kakao"); return; }
+      if (target.closest("[data-kakao-pending]")) {
+        event.preventDefault();
+        if (quickOpen) setQuick(false, true);
+        setDialog("kakao");
+        return;
+      }
       if (target.closest(".reference-quick-toggle")) { setQuick(!quickOpen); return; }
       if (quickOpen && !target.closest(".quick-wrap")) setQuick(false);
       if (quickOpen && target.closest(".quick-wrap a")) setQuick(false, true);
@@ -212,6 +219,52 @@ export default function ReferenceExperience({ markup }: { markup: string }) {
   }, [markup]);
 
   useEffect(() => {
+    const preview = rootRef.current?.querySelector<HTMLElement>(".equipment-video-preview");
+    const video = preview?.querySelector<HTMLVideoElement>("video");
+    const trigger = preview?.querySelector<HTMLButtonElement>(".equipment-video-open");
+    const player = equipmentDialogRef.current;
+    const slot = equipmentVideoSlotRef.current;
+    if (!preview || !video || !trigger || !player || !slot) return;
+
+    // Keep one player so playback position, captions and native controls survive expansion.
+    const placeholder = document.createComment("equipment video position");
+    let previousOverflow = "";
+    let expanded = false;
+    function restoreVideo(focusTrigger: boolean) {
+      if (!expanded) return;
+      video!.pause();
+      // A markup refresh may already have replaced the original preview.
+      if (placeholder.isConnected) placeholder.replaceWith(video!);
+      else video!.remove();
+      expanded = false;
+      document.body.style.overflow = previousOverflow;
+      if (focusTrigger && trigger!.isConnected) trigger!.focus({ preventScroll: true });
+    }
+    function openVideo() {
+      if (player!.open || !window.matchMedia("(max-width: 768px)").matches) return;
+      previousOverflow = document.body.style.overflow;
+      expanded = true;
+      video!.before(placeholder);
+      slot!.replaceChildren(video!);
+      player!.showModal();
+      document.body.style.overflow = "hidden";
+      // Run within the tap gesture; if playback is denied, native controls remain available.
+      void video!.play().catch(() => {});
+    }
+    function closeVideo() { restoreVideo(true); }
+    trigger.addEventListener("click", openVideo);
+    player.addEventListener("close", closeVideo);
+    preview.classList.add("equipment-video-ready");
+    return () => {
+      trigger.removeEventListener("click", openVideo);
+      player.removeEventListener("close", closeVideo);
+      if (player.open) player.close();
+      restoreVideo(false);
+      preview.classList.remove("equipment-video-ready");
+    };
+  }, [markup]);
+
+  useEffect(() => {
     if (dialog) { returnFocus.current = document.activeElement as HTMLElement; dialogRef.current?.showModal(); document.body.style.overflow = "hidden"; }
     else { dialogRef.current?.close(); document.body.style.overflow = ""; returnFocus.current?.focus(); }
     return () => { document.body.style.overflow = ""; };
@@ -223,6 +276,18 @@ export default function ReferenceExperience({ markup }: { markup: string }) {
       rootRef.current?.querySelector<HTMLElement>("#content")?.focus();
     }}>본문 바로가기</a>
     <div ref={rootRef} dangerouslySetInnerHTML={html} />
+    <dialog className="equipment-video-dialog" ref={equipmentDialogRef}
+      aria-labelledby="equipment-video-dialog-title" onClick={event => {
+        if (event.target === event.currentTarget) event.currentTarget.close();
+      }}>
+      <div className="equipment-video-dialog-header">
+        <h2 id="equipment-video-dialog-title">서울바른내과 장비 소개</h2>
+        <button type="button" aria-label="영상 닫기" onClick={() => equipmentDialogRef.current?.close()}>
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="m6 6 12 12M18 6 6 18" /></svg>
+        </button>
+      </div>
+      <div className="equipment-video-dialog-slot" ref={equipmentVideoSlotRef} />
+    </dialog>
     <dialog className="reference-dialog clinic-visit-dialog" ref={dialogRef}
       aria-labelledby="reference-dialog-title" aria-describedby="reference-dialog-description"
       onCancel={() => setDialog(null)} onClick={event => {

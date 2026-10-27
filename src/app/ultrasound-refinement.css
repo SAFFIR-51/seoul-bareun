@@ -1,0 +1,37 @@
+/* Ultrasound shares the clinic's flat cards and readable body typography. */
+.demo1 #section05 { font-family:NotoSansWeb,sans-serif; }
+.demo1 #section05 .cmn-tit .title { font-family:GmarketWeb,sans-serif; font-size:40px; font-weight:300; line-height:1.5; letter-spacing:-.02em; }
+.demo1 #section05 .ultrasound-heading-lead,
+.demo1 #section05 .cmn-tit .title>b { display:block; vertical-align:baseline; }
+.demo1 #section05 .cmn-tit .title>b { font-weight:500; }
+.demo1 #section05 .ultrasound-heading-word { white-space:nowrap; }
+.demo1 #section05 .cmn-tit .desc { max-width:720px; margin-inline:auto; font-size:17px; font-weight:400; line-height:1.8; letter-spacing:0; word-break:keep-all; }
+.demo1 #section05 .item-wrap { gap:28px; margin:48px 0 0; align-items:stretch; }
+.demo1 #section05 .item-wrap>.item { min-width:0; }
+.demo1 #section05 .item-wrap .inner { display:flex; flex-direction:column; height:100%; background:#f8f8f8; }
+.demo1 #section05 .ultrasound-visual { flex:none; margin:0; background:#101c26; }
+.demo1 #section05 .item-wrap figure img.clinical-photo { display:block; width:100%; height:auto; min-height:0; max-height:280px; aspect-ratio:4/3; object-fit:contain; object-position:center; }
+.demo1 #section05 .ultrasound-info { flex:1; min-width:0; padding:28px; border-top:1px solid #0578b2; }
+.demo1 #section05 .ultrasound-title { margin:0; font-family:GmarketWeb,sans-serif; font-size:24px; font-weight:500; font-synthesis:none; line-height:1.5; letter-spacing:-.02em; color:#25465d; }
+.demo1 #section05 .ultrasound-english { margin:6px 0 20px; font-size:13px; font-weight:400; line-height:1.6; letter-spacing:0; color:#697b88; }
+.demo1 #section05 .item-wrap .ultrasound-info .desc { height:auto; margin:0; padding:0; background:none; font-family:NotoSansWeb,sans-serif; font-size:16px; font-weight:400; line-height:1.8; letter-spacing:0; text-align:left; color:#3f4a53; word-break:keep-all; overflow-wrap:anywhere; }
+.demo1 #section05 .ultrasound-info .desc p { margin:0; }
+.demo1 #section05 .ultrasound-info .desc p+p { margin-top:14px; padding-top:14px; border-top:1px solid #dce1e5; }
+.demo1 #section05 .clinical-note { max-width:none; margin-top:24px; font-size:13px; line-height:1.7; text-align:left; }
+@media(min-width:769px) and (max-width:1279px) {
+ .demo1 #section05 .cmn-tit .title { font-size:32px; }
+ .demo1 #section05 .item-wrap { gap:24px; }
+ .demo1 #section05 .ultrasound-info { padding:24px; }
+}
+@media(max-width:768px) {
+ .demo1 #section05 .cmn-tit .title { font-size:26px; }
+ .demo1 #section05 .cmn-tit .desc { padding-top:20px; font-size:16px; }
+ .demo1 #section05 .cmn-tit .desc br { display:none; }
+ .demo1 #section05 .item-wrap { gap:24px; margin-top:32px; }
+ .demo1 #section05 .item-wrap figure img.clinical-photo { max-height:320px; }
+ .demo1 #section05 .ultrasound-info { padding:24px; }
+ .demo1 #section05 .ultrasound-title { font-size:22px; }
+ .demo1 #section05 .ultrasound-english { margin-bottom:18px; }
+}
+@media(max-width:389px) { .demo1 #section05 .cmn-tit .title { font-size:24px; } }
+@media(max-width:359px) { .demo1 #section05 .cmn-tit .title { font-size:22px; } }

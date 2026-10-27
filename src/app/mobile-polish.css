@@ -1,0 +1,19 @@
+/* Mobile issues verified during the full-page review. */
+@media(max-width:768px) {
+ .demo1 #header .header-top .top-content .clinic-header-brand { min-height:44px; }
+ .demo1 #gallery .arrow { width:44px; }
+ .demo1 #gallery .arrow-prev { left:-24px; }
+ .demo1 #gallery .arrow-next { right:-24px; }
+ .demo1 #section08 .item-wrap .txt { font-size:14px; line-height:1.7; letter-spacing:0; }
+ .demo1 #section08 .box-wrap .txt2 { font-size:15px; line-height:1.7; letter-spacing:0; }
+ /* Match the mobile endoscopy tabs; keep the program contents unchanged. */
+ .demo1 #section03 .cont-section:after { top:23px; }
+ .demo1 #section03 .cont-section .cmn-tabmenu.type2 { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px; width:100%; max-width:none; margin:0; }
+ .demo1 #section03 .cont-section .cmn-tabmenu.type2 .item { display:flex; min-width:0; max-width:none; padding:0; }
+ .demo1 #section03 .cont-section .cmn-tabmenu.type2 .item a { box-sizing:border-box; width:100%; height:46px; min-height:46px; padding:0 5px; border-color:#b8cbd8; font-family:NotoSansWeb,sans-serif; font-size:16px; font-weight:400; font-synthesis:none; line-height:1.4; letter-spacing:0; }
+ .demo1 #section03 .cont-section .cmn-tabmenu.type2 .item a.selected { border-color:#0578b2; background:#0578b2; font-weight:500; }
+ .demo1 #section03 .cont-section .cmn-tabmenu.type2 .item a:active { transform:none; }
+}
+@media(max-width:359px) {
+ .demo1 #section12 .time-table .table-line { column-gap:4px; }
+}
