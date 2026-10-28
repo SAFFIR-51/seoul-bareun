@@ -1,4 +1,10 @@
 /* Mobile issues verified during the full-page review. */
+@media(max-width:1279px) {
+ /* Keep text stable on touch layouts, including viewport and orientation changes. */
+ .demo1 #content :is([data-ani^="fade"], [data-ania^="fade"], [data-aos]) { visibility:visible; opacity:1; transform:none; animation:none; transition:none; }
+ .demo1 #content .cmn-tabmenu .item a { transition:none; }
+ .demo1 #content .cmn-tabmenu .item a:active { transform:none; }
+}
 @media(max-width:768px) {
  .demo1 #header .header-top .top-content .clinic-header-brand { min-height:44px; }
  .demo1 #gallery .arrow { width:44px; }

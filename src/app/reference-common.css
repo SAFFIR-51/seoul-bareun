@@ -82,7 +82,7 @@ a:hover { text-decoration: none; }
 [data-ani~='fade-down'] { transform: translateY(-100px); }
 [data-ani~='fade-left'] { transform: translateX(100px); }
 [data-ani~='fade-right'] { transform: translateX(-100px); }
-[data-ani^='fade'].fixo-animate { visibility: visible; opacity: 1; transform: translate(0); transition: all 1.2s ease .4s; }
+[data-ani^='fade'].fixo-animate { visibility: visible; opacity: 1; transform: translate(0); transition: opacity 1.2s ease .4s, transform 1.2s ease .4s; }
 
 [data-ani~="delay1"].fixo-animate { transition-delay: .1s; }
 [data-ani~="delay2"].fixo-animate { transition-delay: .2s; }
@@ -112,7 +112,7 @@ a:hover { text-decoration: none; }
 [data-ania~="fade-down"] { opacity: 0; transform: translateY(-100px); }
 [data-ania~="fade-left"] { opacity: 0; transform: translateX(100px); }
 [data-ania~="fade-right"] { opacity: 0; transform: translateX(-100px); }
-.fixo-animate-area [data-ania^="fade"] { visibility: visible; opacity: 1; transform: translate(0); transition: all 1.2s ease .4s; }
+.fixo-animate-area [data-ania^="fade"] { visibility: visible; opacity: 1; transform: translate(0); transition: opacity 1.2s ease .4s, transform 1.2s ease .4s; }
 
 .fixo-animate-area [data-ania~="delay1"] { transition-delay: .1s; }
 .fixo-animate-area [data-ania~="delay2"] { transition-delay: .2s; }

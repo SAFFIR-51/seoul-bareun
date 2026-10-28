@@ -105,7 +105,7 @@ export default function ReferenceExperience({ markup }: { markup: string }) {
       panels?.forEach((panel, i) => {
         panelAnimations.get(panel)?.cancel(); panelAnimations.delete(panel);
         panel.classList.toggle("active", i === index); panel.setAttribute("aria-hidden", String(i !== index)); panel.inert = i !== index;
-        if (i === index && animate && !motionReduced) {
+        if (i === index && animate && !motionReduced && window.innerWidth > 1279) {
           const animation = panel.animate([{ opacity: 0.45 }, { opacity: 1 }], { duration: 180, easing: "cubic-bezier(.23,1,.32,1)" });
           panelAnimations.set(panel, animation);
         }
