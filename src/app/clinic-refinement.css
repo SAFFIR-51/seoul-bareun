@@ -247,7 +247,7 @@
 @media(max-width:768px) { .demo1 .mwidth { padding-inline:24px; } .demo1 #section07 .mwidth { padding-right:24px; } }
 .reference-skip:not(:focus) { visibility:hidden; }
 /* A dedicated reversed logo preserves the brand on the dark footer. */
-.demo1 #footer h2 img { width:min(360px,calc(100% - 64px)); height:auto; max-height:none; filter:none; }
+.demo1 #footer h2 img { width:min(360px,calc(100% - 64px)); height:auto; max-height:none; filter:none; clip-path:none; }
 .demo1 #footer address { max-width:1000px; margin-inline:auto; padding:0 28px 40px; box-sizing:border-box; color:#fff; text-transform:none; white-space:normal; overflow-wrap:anywhere; font-size:14px; font-weight:400; line-height:1.9; }
 .demo1 #footer address span,.demo1 #footer address a { color:#fff; }
 @media(max-width:768px) { .demo1 #footer h2 { min-height:104px; height:auto; padding-block:24px; box-sizing:border-box; } .demo1 #footer h2 img { width:min(300px,calc(100% - 64px)); } .demo1 #footer address { padding:0 24px 32px; font-size:13px; } }

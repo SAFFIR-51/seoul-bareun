@@ -1,15 +1,17 @@
-/* High-resolution PNGs preserve the supplied wordmark at every header size. */
-.demo1 #header .header-top .top-content .clinic-header-brand { --brand-height: 74px; display: inline-flex; align-items: center; gap: 10px; color: #111; text-decoration: none; }
-.demo1 #header .header-top .top-content .clinic-header-symbol { display: block; flex: none; width: auto; height: var(--brand-height); object-fit: contain; clip-path: none; }
-.demo1 #header .clinic-header-wordmark { display: block; flex: none; line-height: 0; text-align: center; }
-.demo1 #header .header-top .top-content .clinic-header-wordmark-image { display: block; width: auto; height: var(--brand-height); object-fit: contain; clip-path: none; }
+/* The supplied vector lockup preserves the original symbol and lettering. */
+.demo1 #header .header-top .top-content .clinic-header-brand { --brand-height: 74px; display: inline-flex; align-items: center; max-width: calc(100% - 112px); text-decoration: none; }
+.demo1 #header .header-top .top-content .clinic-header-logo { display: block; width: auto; max-width: 100%; height: var(--brand-height); object-fit: contain; clip-path: none; }
 .demo1 .cmn-tit .symbol img { width: 64px; height: 54px; object-fit: contain; }
+.demo1 .txt-top .clinic-english-wordmark { display: block; width: 244px; max-width: 100%; height: auto; margin-inline: auto; }
+.demo1 .cmn-tit.align-l .txt-top .clinic-english-wordmark { margin-inline: 0; }
+.demo1 .cmn-tit.color-w .txt-top .clinic-english-wordmark,
+.demo1 #keyvisualMain .txt-top .clinic-english-wordmark { filter: brightness(0) invert(1); }
 @media (max-width:768px) {
   .demo1 .cmn-tit .symbol img { width: 52px; height: 44px; }
 }
 @media (max-width:1279px) {
-  .demo1 #header .header-top .top-content .clinic-header-brand { --brand-height: 36px; gap: 8px; }
+  .demo1 #header .header-top .top-content .clinic-header-brand { --brand-height: 40px; }
 }
 @media (max-width:359px) {
-  .demo1 #header .header-top .top-content .clinic-header-brand { --brand-height: 32px; gap: 8px; }
+  .demo1 #header .header-top .top-content .clinic-header-brand { --brand-height: 36px; }
 }
