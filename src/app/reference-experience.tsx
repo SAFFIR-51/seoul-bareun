@@ -36,7 +36,16 @@ export default function ReferenceExperience({ markup }: { markup: string }) {
     let hovering = false;
     let heroVisible = true;
     let scrollFrame = 0;
+    let mobileHeroWidth = 0;
+    let mobileHeroReadyAt = Number.POSITIVE_INFINITY;
+    let disposed = false;
     const panelAnimations = new Map<HTMLElement, Animation>();
+
+    // Start the mobile slideshow only after visitors can see the finished first slide.
+    const firstHeroImage = heroSlides[0].querySelector<HTMLImageElement>(".box-image img");
+    void Promise.all([firstHeroImage?.decode().catch(() => {}), document.fonts.ready]).then(() => {
+      if (!disposed) mobileHeroReadyAt = performance.now();
+    });
 
     function updateSlides(slides: HTMLElement[], active: number) {
       slides.forEach((slide, i) => {
@@ -66,9 +75,18 @@ export default function ReferenceExperience({ markup }: { markup: string }) {
       else if (restoreFocus) menuButton.focus({ preventScroll: true });
     }
     function resize() {
-      // Phone heroes use the stable CSS viewport height when browser chrome moves.
-      if (window.innerWidth <= 768) hero.style.removeProperty("height");
-      else hero.style.height = `${Math.max(700, window.innerWidth > 1279 ? window.innerHeight - header.offsetHeight : window.innerHeight)}px`;
+      if (window.innerWidth <= 768) {
+        // Freeze the first height when in-app browser toolbars hide during scrolling.
+        // Re-measure only when the layout width changes, such as a phone rotation.
+        if (mobileHeroWidth !== window.innerWidth) {
+          hero.style.removeProperty("height");
+          hero.style.height = `${hero.getBoundingClientRect().height}px`;
+          mobileHeroWidth = window.innerWidth;
+        }
+      } else {
+        mobileHeroWidth = 0;
+        hero.style.height = `${Math.max(700, window.innerWidth > 1279 ? window.innerHeight - header.offsetHeight : window.innerHeight)}px`;
+      }
       if (window.innerWidth > 1279 && menuOpen) setMenu(false);
       menu.inert = window.innerWidth <= 1279 && !menuOpen;
       menu.setAttribute("aria-hidden", String(menu.inert));
@@ -206,11 +224,13 @@ export default function ReferenceExperience({ markup }: { markup: string }) {
     motionPreference.addEventListener("change", changeMotion);
     window.addEventListener("resize", resize); window.addEventListener("scroll", scheduleScroll, { passive: true });
     const timer = window.setInterval(() => {
-      if (automatic && !menuOpen && !hovering && heroVisible && !document.hidden && !document.querySelector("dialog[open]")) {
+      const firstSlideReady = window.innerWidth > 768 || performance.now() - mobileHeroReadyAt >= 6000;
+      if (automatic && firstSlideReady && !menuOpen && !hovering && heroVisible && !document.hidden && !document.querySelector("dialog[open]")) {
         heroIndex = (heroIndex + 1) % heroSlides.length; updateSlides(heroSlides, heroIndex);
       }
     }, 6000);
     return () => {
+      disposed = true;
       window.clearInterval(timer); window.cancelAnimationFrame(scrollFrame); observer.disconnect(); panelAnimations.forEach(animation => animation.cancel());
       root.removeEventListener("click", handleClick); root.removeEventListener("keydown", handleKey); root.removeEventListener("pointerdown", handlePointer);
       hero.removeEventListener("focusin", pauseOnFocus); hero.removeEventListener("pointerenter", pointerEnter); hero.removeEventListener("pointerleave", pointerLeave);
