@@ -66,7 +66,9 @@ export default function ReferenceExperience({ markup }: { markup: string }) {
       else if (restoreFocus) menuButton.focus({ preventScroll: true });
     }
     function resize() {
-      hero.style.height = `${Math.max(700, window.innerWidth > 1279 ? window.innerHeight - header.offsetHeight : window.innerHeight)}px`;
+      // Phone heroes use the stable CSS viewport height when browser chrome moves.
+      if (window.innerWidth <= 768) hero.style.removeProperty("height");
+      else hero.style.height = `${Math.max(700, window.innerWidth > 1279 ? window.innerHeight - header.offsetHeight : window.innerHeight)}px`;
       if (window.innerWidth > 1279 && menuOpen) setMenu(false);
       menu.inert = window.innerWidth <= 1279 && !menuOpen;
       menu.setAttribute("aria-hidden", String(menu.inert));

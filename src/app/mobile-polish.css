@@ -6,6 +6,10 @@
  .demo1 #content .cmn-tabmenu .item a:active { transform:none; }
 }
 @media(max-width:768px) {
+ /* Match the desktop's white, background-free arrows with mobile touch targets. */
+ .demo1 #keyvisualMain .slide .arrow { display:block; top:50%; width:44px; height:44px; transform:translateY(-50%); background-color:transparent; background-size:40px auto; touch-action:manipulation; }
+ .demo1 #keyvisualMain .slide .arrow-prev { left:4px; }
+ .demo1 #keyvisualMain .slide .arrow-next { right:4px; }
  .demo1 #header .header-top .top-content .clinic-header-brand { min-height:44px; }
  .demo1 #gallery .arrow { width:44px; }
  .demo1 #gallery .arrow-prev { left:-24px; }
