@@ -52,6 +52,7 @@ export default function ReferenceExperience({ markup }: { markup: string }) {
         slide.classList.toggle("reference-slide-active", i === active);
         slide.setAttribute("aria-hidden", String(i !== active));
         slide.inert = i !== active;
+        if (slides === heroSlides) slide.hidden = window.innerWidth <= 768 && i !== active;
       });
     }
     function moveHero(direction: number) {
@@ -67,6 +68,7 @@ export default function ReferenceExperience({ markup }: { markup: string }) {
       menuButton.setAttribute("aria-label", open ? "메뉴 닫기" : "메뉴 열기");
       document.body.style.overflow = open ? "hidden" : "";
       const mobile = window.innerWidth <= 1279;
+      menu.hidden = mobile && !open;
       menu.inert = mobile && !open;
       menu.setAttribute("aria-hidden", String(mobile && !open));
       content.inert = open; quick.inert = open;
@@ -88,8 +90,10 @@ export default function ReferenceExperience({ markup }: { markup: string }) {
         hero.style.height = `${Math.max(700, window.innerWidth > 1279 ? window.innerHeight - header.offsetHeight : window.innerHeight)}px`;
       }
       if (window.innerWidth > 1279 && menuOpen) setMenu(false);
+      menu.hidden = window.innerWidth <= 1279 && !menuOpen;
       menu.inert = window.innerWidth <= 1279 && !menuOpen;
       menu.setAttribute("aria-hidden", String(menu.inert));
+      heroSlides.forEach((slide, i) => { slide.hidden = window.innerWidth <= 768 && i !== heroIndex; });
       if (window.innerWidth > 1279 && quickOpen) setQuick(false);
     }
     function setQuick(open: boolean, focus = false) {
